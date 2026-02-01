@@ -18,3 +18,9 @@ source: "web:polymarket-trading-sources"
 - Favorite compounding: Grind high-probability (>90%) outcomes for steady returns while avoiding black swan tail risk
 - Mention market 'No' bias: Fade overpriced YES shares in word-mention markets where retail excitement inflates probabilities
 - Whale copy-trading: Monitor blockchain-transparent top traders and replicate high-conviction positions before broader market reaction
+
+## Source
+- Title: (unknown)
+- Author: (unknown)
+- URL: (unknown)
+- Publish time: (unknown)

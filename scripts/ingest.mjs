@@ -38,23 +38,40 @@ function usage(exitCode = 1) {
   node scripts/ingest.mjs --file note.txt --topic technical_analysis --source "my-notes"
 
 Options:
-  --file <path>     Read input text from file (otherwise stdin)
-  --topic <topic>   Force topic folder (one of: ${TOPICS.join(", ")})
-  --source <string> Optional source label stored in frontmatter
-  --outdir <dir>    Base output dir (default: ./knowledge)
-  --help            Show this help
+  --file <path>            Read input text from file (otherwise stdin)
+  --topic <topic>          Force topic folder (one of: ${TOPICS.join(", ")})
+  --source <string>        Optional source label stored in frontmatter
+  --source-title <string>  Article title (for ## Source section)
+  --source-author <string> Author (for ## Source section)
+  --source-url <string>    URL (for ## Source section)
+  --source-published <str> Publish time (for ## Source section; ISO recommended)
+  --outdir <dir>           Base output dir (default: ./knowledge)
+  --help                   Show this help
 `);
   process.exit(exitCode);
 }
 
 function parseArgs(argv) {
-  const out = { file: null, topic: null, source: null, outdir: "knowledge" };
+  const out = {
+    file: null,
+    topic: null,
+    source: null,
+    sourceTitle: null,
+    sourceAuthor: null,
+    sourceUrl: null,
+    sourcePublished: null,
+    outdir: "knowledge",
+  };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--help" || a === "-h") usage(0);
     if (a === "--file") out.file = argv[++i];
     else if (a === "--topic") out.topic = argv[++i];
     else if (a === "--source") out.source = argv[++i];
+    else if (a === "--source-title") out.sourceTitle = argv[++i];
+    else if (a === "--source-author") out.sourceAuthor = argv[++i];
+    else if (a === "--source-url") out.sourceUrl = argv[++i];
+    else if (a === "--source-published") out.sourcePublished = argv[++i];
     else if (a === "--outdir") out.outdir = argv[++i];
     else {
       console.error(`Unknown arg: ${a}`);
@@ -198,7 +215,7 @@ script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text
   return parsed;
 }
 
-function toMarkdown({ id, title, topic, tags, createdAt, source, keyPoints }) {
+function toMarkdown({ id, title, topic, tags, createdAt, source, sourceMeta, keyPoints }) {
   const fm = [
     "---",
     `id: ${id}`,
@@ -211,10 +228,23 @@ function toMarkdown({ id, title, topic, tags, createdAt, source, keyPoints }) {
     "",
   ].join("\n");
 
+  const sm = {
+    title: sourceMeta?.title ?? null,
+    author: sourceMeta?.author ?? null,
+    url: sourceMeta?.url ?? null,
+    publish_time: sourceMeta?.publish_time ?? null,
+  };
+
   const md = [
     fm,
     "## Key points",
     ...(keyPoints.length ? keyPoints.map((p) => `- ${p}`) : ["- (none)"]),
+    "",
+    "## Source",
+    `- Title: ${sm.title ?? "(unknown)"}`,
+    `- Author: ${sm.author ?? "(unknown)"}`,
+    `- URL: ${sm.url ?? "(unknown)"}`,
+    `- Publish time: ${sm.publish_time ?? "(unknown)"}`,
   ].join("\n");
 
   return md.trimEnd() + "\n";
@@ -268,6 +298,12 @@ async function main() {
     tags: extracted.tags || [],
     createdAt,
     source: args.source || null,
+    sourceMeta: {
+      title: args.sourceTitle,
+      author: args.sourceAuthor,
+      url: args.sourceUrl,
+      publish_time: args.sourcePublished,
+    },
     keyPoints: extracted.key_points || [],
   });
 

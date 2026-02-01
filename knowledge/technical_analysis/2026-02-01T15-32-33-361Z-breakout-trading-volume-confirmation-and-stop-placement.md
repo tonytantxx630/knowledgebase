@@ -12,3 +12,9 @@ source: "demo"
 - Rising volume during the breakout confirms genuine buying interest and reduces false breakout risk
 - Stop loss placement below the swing low provides a logical exit point if the breakout fails
 - This approach combines price action (resistance break) with volume analysis for higher probability setups
+
+## Source
+- Title: (unknown)
+- Author: (unknown)
+- URL: (unknown)
+- Publish time: (unknown)

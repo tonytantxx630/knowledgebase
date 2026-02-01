@@ -13,3 +13,9 @@ source: "demo"
 - Stop-loss placement below the swing low protects against false breakouts
 - The swing low serves as the invalidation point where the breakout thesis no longer holds
 - Volume acts as a filter to distinguish between genuine breakouts and low-conviction moves
+
+## Source
+- Title: (unknown)
+- Author: (unknown)
+- URL: (unknown)
+- Publish time: (unknown)

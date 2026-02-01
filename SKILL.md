@@ -56,11 +56,17 @@ Each note is stored as Markdown with YAML frontmatter:
 - `created_at` (ISO timestamp)
 - `source` (optional)
 
-Body sections are designed to be embeddings-ready without adding heavy dependencies:
+## Repo rules (apply to all future commits)
 
-- Summary
-- Key points
-- Details
+1) **Do not commit raw scraped sources** (no `sources/` directory in git). Sources should be kept as links in `source:` metadata, not as full copied articles.
+2) **Do not write long prose “Details” sections** inside `knowledge/**/*.md`. Keep notes as concise, self-contained bullet points.
+
+### Storage format
+
+Notes are designed to be embeddings-ready without adding heavy dependencies:
+
+- YAML frontmatter (metadata)
+- Key points (bullet list)
 
 ### Topic index
 

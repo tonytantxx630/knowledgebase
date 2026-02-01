@@ -15,6 +15,9 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Do not store raw scraped sources in-repo (too copious).
+sources/
 Thumbs.db
 
 # Build

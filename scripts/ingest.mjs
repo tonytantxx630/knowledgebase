@@ -14,11 +14,22 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { spawnSync } from "node:child_process";
 
-// For this repo's initial use-case we keep topics intentionally small.
-// Add more later if needed.
+// Topics are intentionally extensible. Don't remove topics; add new ones if needed.
 const TOPICS = [
-  "technical_trading",
+  "cryptocurrency",
   "prediction_market",
+  "technical_analysis",
+  "technical_trading",
+  "macro",
+  "risk_management",
+  "equities",
+  "fx",
+  "options",
+  "portfolio",
+  "trading_psychology",
+  "market_microstructure",
+  "fundamentals",
+  "other",
 ];
 
 function usage(exitCode = 1) {
@@ -114,17 +125,15 @@ Return ONLY valid JSON matching this schema:
   "title": string,
   "topic": one of ${JSON.stringify(TOPICS)},
   "tags": string[],
-  "summary": string,
-  "key_points": string[],
-  "details": string[]
+  "key_points": string[]
 }
 
 Guidelines:
 - Focus on durable principles, definitions, heuristics, and actionable takeaways.
 - Ignore fluff and story.
 - tags: 3-8 short snake_case tags.
-- key_points: 3-10 bullets.
-- details: 1-6 short paragraphs.
+- key_points: 5-15 bullets, each self-contained.
+- Do NOT include a long prose section; condense into key points only.
 - If FORCED_TOPIC is provided, use it exactly.
 
 FORCED_TOPIC: ${forcedTopic ?? ""}
@@ -184,14 +193,12 @@ script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text
   parsed.topic = clampTopic(forcedTopic ?? parsed.topic) ?? "other";
   parsed.tags = Array.isArray(parsed.tags) ? parsed.tags.map(String) : [];
   parsed.key_points = Array.isArray(parsed.key_points) ? parsed.key_points.map(String) : [];
-  parsed.details = Array.isArray(parsed.details) ? parsed.details.map(String) : [];
   parsed.title = String(parsed.title ?? "Untitled").trim() || "Untitled";
-  parsed.summary = String(parsed.summary ?? "").trim();
 
   return parsed;
 }
 
-function toMarkdown({ id, title, topic, tags, createdAt, source, summary, keyPoints, details }) {
+function toMarkdown({ id, title, topic, tags, createdAt, source, keyPoints }) {
   const fm = [
     "---",
     `id: ${id}`,
@@ -206,14 +213,8 @@ function toMarkdown({ id, title, topic, tags, createdAt, source, summary, keyPoi
 
   const md = [
     fm,
-    "## Summary",
-    summary || "(no summary)",
-    "",
     "## Key points",
     ...(keyPoints.length ? keyPoints.map((p) => `- ${p}`) : ["- (none)"]),
-    "",
-    "## Details",
-    ...(details.length ? details.map((p) => `${p}\n`) : ["(none)"])
   ].join("\n");
 
   return md.trimEnd() + "\n";
@@ -267,9 +268,7 @@ async function main() {
     tags: extracted.tags || [],
     createdAt,
     source: args.source || null,
-    summary: extracted.summary || "",
     keyPoints: extracted.key_points || [],
-    details: extracted.details || [],
   });
 
   await fs.writeFile(outPath, md, "utf8");

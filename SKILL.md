@@ -1,17 +1,74 @@
 # Knowledgebase Skill
 
-A minimal skill skeleton for OpenClaw.
+A tiny, file-based knowledgebase for trading & investing notes.
 
-## Overview
+This repo contains a CLI ingestor that:
 
-This skill provides a template structure for building OpenClaw skills.
+1) extracts durable trading/investment knowledge from raw text
+2) classifies it into a topic (e.g. `technical_analysis`, `cryptocurrency`, `prediction_market`)
+3) creates the topic folder if missing
+4) stores the result as **LLM-friendly Markdown** (chunkable sections + YAML frontmatter)
 
-## Usage
+## Quick start
 
-Configure and use this skill according to your needs.
+### Ingest from stdin
 
-## Structure
+```bash
+cd knowledgebase
+cat note.txt | node scripts/ingest.mjs --source "book:Foo"
+```
 
-- `scripts/` - Automation scripts
-- `references/` - Reference documentation
-- `assets/` - Static assets
+### Ingest from file
+
+```bash
+cd knowledgebase
+node scripts/ingest.mjs --file note.txt --source "my-notes"
+```
+
+### Force a topic
+
+```bash
+node scripts/ingest.mjs --file note.txt --topic technical_analysis --source "newsletter:Bar"
+```
+
+## Requirements
+
+- Node.js 18+
+- `ANTHROPIC_API_KEY` in the environment (used for summarization + topic classification)
+
+## Output layout
+
+```
+knowledge/
+  <topic>/
+    _index.json
+    <timestamp>-<slug>.md
+```
+
+### Markdown format
+
+Each note is stored as Markdown with YAML frontmatter:
+
+- `id` (uuid)
+- `title`
+- `topic`
+- `tags` (array)
+- `created_at` (ISO timestamp)
+- `source` (optional)
+
+Body sections are designed to be embeddings-ready without adding heavy dependencies:
+
+- Summary
+- Key points
+- Details
+
+### Topic index
+
+Each topic has a lightweight `knowledge/<topic>/_index.json` listing entries.
+This makes it easy for a future embedding/indexing pipeline to discover and chunk files.
+
+## Repo structure
+
+- `scripts/` - automation scripts (ingest lives here)
+- `references/` - reference docs/templates
+- `assets/` - static assets

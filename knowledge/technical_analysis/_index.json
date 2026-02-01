@@ -1,0 +1,37 @@
+{
+  "topic": "technical_analysis",
+  "entries": [
+    {
+      "id": "0f7d36d6-27fa-4043-820e-cd8b16281a26",
+      "title": "Breakout Trading with Volume Confirmation",
+      "topic": "technical_analysis",
+      "tags": [
+        "breakout",
+        "resistance",
+        "volume_confirmation",
+        "stop_loss",
+        "swing_trading",
+        "risk_management"
+      ],
+      "created_at": "2026-02-01T15:33:47.276Z",
+      "source": "demo",
+      "path": "knowledge/technical_analysis/2026-02-01T15-33-47-276Z-breakout-trading-with-volume-confirmation.md"
+    },
+    {
+      "id": "fe8008ff-51fb-4825-a28f-e4469df41ee2",
+      "title": "Breakout Trading: Volume Confirmation and Stop Placement",
+      "topic": "technical_analysis",
+      "tags": [
+        "breakout",
+        "resistance",
+        "volume_confirmation",
+        "stop_loss",
+        "swing_low",
+        "entry_signal"
+      ],
+      "created_at": "2026-02-01T15:32:33.361Z",
+      "source": "demo",
+      "path": "knowledge/technical_analysis/2026-02-01T15-32-33-361Z-breakout-trading-volume-confirmation-and-stop-placement.md"
+    }
+  ]
+}

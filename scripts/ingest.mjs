@@ -12,21 +12,13 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import crypto from "node:crypto";
+import { spawnSync } from "node:child_process";
 
+// For this repo's initial use-case we keep topics intentionally small.
+// Add more later if needed.
 const TOPICS = [
-  "cryptocurrency",
+  "technical_trading",
   "prediction_market",
-  "technical_analysis",
-  "macro",
-  "risk_management",
-  "equities",
-  "fx",
-  "options",
-  "portfolio",
-  "trading_psychology",
-  "market_microstructure",
-  "fundamentals",
-  "other",
 ];
 
 function usage(exitCode = 1) {
@@ -95,7 +87,20 @@ function clampTopic(topic) {
   return TOPICS.includes(t) ? t : "other";
 }
 
+function ensureClaudeAvailable() {
+  // Hard-fail early if Claude Code is not available.
+  const r = spawnSync("claude", ["--version"], { encoding: "utf8", timeout: 8000 });
+  if (r.error) throw r.error;
+  if (r.status !== 0) {
+    throw new Error(
+      `Claude Code CLI is not available (claude --version exited ${r.status}). stderr: ${String(r.stderr || "").trim()}`
+    );
+  }
+}
+
 async function claudeExtract({ text, forcedTopic }) {
+  ensureClaudeAvailable();
+
   // Claude Code CLI uses ANTHROPIC_API_KEY for API-key auth.
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
@@ -141,10 +146,9 @@ ${text}`;
 
   const bashCmd = `
 set -euo pipefail
-PROMPT=$(cat ${JSON.stringify(promptPath)})
-ESCAPED=$(printf '%q' "$PROMPT")
 # script allocates a pseudo-tty; output goes to stdout.
-script -q -c "claude -p $ESCAPED --output-format text --permission-mode dontAsk --max-budget-usd ${budget} --no-session-persistence" /dev/null
+# We avoid complex shell-escaping by piping the prompt via stdin.
+script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text --permission-mode dontAsk --max-budget-usd ${budget} --no-session-persistence" /dev/null
 `;
 
   const child = spawn("bash", ["-lc", bashCmd], {

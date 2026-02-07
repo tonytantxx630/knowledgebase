@@ -55,7 +55,7 @@ Each note is stored as Markdown with YAML frontmatter:
 - `tags` (array)
 - `created_at` (ISO timestamp)
 - `source` (URL)
-- `source timestamp` (ISO timestamp)
+- `source_timestamp` (ISO timestamp) ## This is the timestamp when the article was published if available. "N/A" if it cannot be found.
 
 ## Repo rules (apply to all future commits)
 

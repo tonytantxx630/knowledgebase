@@ -54,7 +54,8 @@ Each note is stored as Markdown with YAML frontmatter:
 - `topic`
 - `tags` (array)
 - `created_at` (ISO timestamp)
-- `source` (optional)
+- `source` (URL)
+- `source timestamp` (ISO timestamp)
 
 ## Repo rules (apply to all future commits)
 

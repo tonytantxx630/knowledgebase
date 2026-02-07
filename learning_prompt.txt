@@ -1,3 +1,6 @@
+git checkout main
+git pull
+
 Repeat this 5 times:
 Find an artile that talks about technical analysis. It could be from a website, twitter page, reddit, blogs. Check the URL against the source URLs found in md files inside knowledge/technical_analysis. If it already exist, then find another article.
 Summarise key points and create a new md file in knowledge/technical_analysis

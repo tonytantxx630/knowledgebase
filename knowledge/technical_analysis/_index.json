@@ -2,6 +2,95 @@
   "topic": "technical_analysis",
   "entries": [
     {
+      "id": "8268b0fb-e645-494d-87d1-30f6599ff4a1",
+      "title": "How To Profit From the Bollinger Squeeze",
+      "topic": "technical_analysis",
+      "tags": [
+        "bollinger_bands",
+        "volatility",
+        "breakout_trading",
+        "squeeze_pattern",
+        "rsi",
+        "volume_analysis",
+        "head_fake",
+        "risk_management"
+      ],
+      "created_at": "2026-02-07T14:21:01.850Z",
+      "source": "https://www.investopedia.com/articles/technical/04/030304.asp",
+      "path": "knowledge/technical_analysis/2026-02-07T14-21-01-850Z-how-to-profit-from-the-bollinger-squeeze.md"
+    },
+    {
+      "id": "5158f8b7-38a7-4836-99f4-47cae0521bfc",
+      "title": "Understanding Triangle Patterns in Technical Analysis",
+      "topic": "technical_analysis",
+      "tags": [
+        "triangle_patterns",
+        "continuation_patterns",
+        "ascending_triangle",
+        "descending_triangle",
+        "symmetrical_triangle",
+        "volume_confirmation",
+        "breakout_trading",
+        "chart_patterns"
+      ],
+      "created_at": "2026-02-07T14:20:06.383Z",
+      "source": "https://www.investopedia.com/articles/technical/03/091003.asp",
+      "path": "knowledge/technical_analysis/2026-02-07T14-20-06-383Z-understanding-triangle-patterns-in-technical-analysis.md"
+    },
+    {
+      "id": "9d5a682f-00c8-48b5-a76e-12bb2e270b6d",
+      "title": "Divergence Cheat Sheet: Go-To Guide for Traders",
+      "topic": "technical_analysis",
+      "tags": [
+        "divergence",
+        "rsi",
+        "macd",
+        "momentum_indicators",
+        "reversal_patterns",
+        "trend_continuation",
+        "oscillators",
+        "confirmation"
+      ],
+      "created_at": "2026-02-07T14:19:23.478Z",
+      "source": "https://www.xs.com/en/blog/divergence-cheat-sheet/",
+      "path": "knowledge/technical_analysis/2026-02-07T14-19-23-478Z-divergence-cheat-sheet-go-to-guide-for-traders.md"
+    },
+    {
+      "id": "42f736af-76de-4bde-9c1a-835c42479e04",
+      "title": "The Ultimate Trading Guide on Elliott Wave Theory",
+      "topic": "technical_analysis",
+      "tags": [
+        "elliott_wave",
+        "wave_theory",
+        "fractal_analysis",
+        "trend_prediction",
+        "fibonacci_ratios",
+        "corrective_waves",
+        "impulsive_waves",
+        "market_psychology"
+      ],
+      "created_at": "2026-02-07T14:18:35.074Z",
+      "source": "https://tradeciety.com/the-ultimate-trading-guide-on-elliot-wave-theory",
+      "path": "knowledge/technical_analysis/2026-02-07T14-18-35-074Z-the-ultimate-trading-guide-on-elliott-wave-theory.md"
+    },
+    {
+      "id": "0d8977c3-5a6b-4de7-81d6-e3cd2d5832aa",
+      "title": "Strategies for Trading Fibonacci Retracement Levels",
+      "topic": "technical_analysis",
+      "tags": [
+        "fibonacci_retracement",
+        "support_resistance",
+        "fibonacci_extensions",
+        "entry_timing",
+        "risk_management",
+        "confluence_trading",
+        "swing_trading"
+      ],
+      "created_at": "2026-02-07T14:17:48.394Z",
+      "source": "https://www.investopedia.com/articles/active-trading/091114/strategies-trading-fibonacci-retracements.asp",
+      "path": "knowledge/technical_analysis/2026-02-07T14-17-48-394Z-strategies-for-trading-fibonacci-retracement-levels.md"
+    },
+    {
       "id": "5ed5138a-f0cb-4a4c-8d72-e09268373603",
       "title": "How to Use Volume-Weighted Indicators in Trading",
       "topic": "technical_analysis",

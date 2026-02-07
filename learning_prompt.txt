@@ -1,7 +1,13 @@
-Repeat this 30 times:
-Find an artile that talks about technical analysis. It could be from a website, twitter page, reddit, blogs. Summarise key points and update knowledge/technical_analysis
+Repeat this 5 times:
+Find an artile that talks about technical analysis. It could be from a website, twitter page, reddit, blogs. Check the URL against the source URLs found in md files inside knowledge/technical_analysis. If it already exist, then find another article.
+Summarise key points and create a new md file in knowledge/technical_analysis
 Rest for 1 second
 
-Repeat this 30 times:
-Find an artile that talks about trading in polymarket. It could be from a website, twitter page, reddit, blogs. Summarise key points and update knowledge/prediction_market
+Repeat this 5 times:
+Find an artile that talks about trading in polymarket. It could be from a website, twitter page, reddit, blogs. Check the URL against the source URLs found in md files inside knowledge/prediction_market. If it already exist, then find another article.
+Summarise key points and create a new md file in  knowledge/prediction_market
 Rest for 1 second
+
+Create a new branch with name = <current timestamp> and git gush to remove repo.
+
+Finally, summarize the key changes made in Telegram channel.

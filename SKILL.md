@@ -55,11 +55,11 @@ Each note is stored as Markdown with YAML frontmatter:
 - `tags` (array)
 - `created_at` (ISO timestamp)
 - `source` (URL)
-- `source_timestamp` (ISO timestamp) ## This is the timestamp when the article was published if available. "N/A" if it cannot be found.
+- `source_timestamp` (ISO timestamp)
 
 ## Repo rules (apply to all future commits)
 
-1) **Do not commit raw scraped sources** (no `sources/` directory in git). Sources should be kept as links in `source:` metadata, not as full copied articles.
+1) **Do not commit raw scraped sources** (no `sources/` directory in git). Sources should be kept as links in `source:` metadata and publish timestamps in `source_timestamp:` metadata, not as full copied articles.
 2) **Do not write long prose “Details” sections** inside `knowledge/**/*.md`. Keep notes as concise, self-contained bullet points.
 
 ### Storage format

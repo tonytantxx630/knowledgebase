@@ -2,6 +2,93 @@
   "topic": "technical_analysis",
   "entries": [
     {
+      "id": "5ed5138a-f0cb-4a4c-8d72-e09268373603",
+      "title": "How to Use Volume-Weighted Indicators in Trading",
+      "topic": "technical_analysis",
+      "tags": [
+        "vwap",
+        "volume_analysis",
+        "intraday_trading",
+        "support_resistance",
+        "institutional_trading",
+        "momentum",
+        "execution_quality"
+      ],
+      "created_at": "2026-02-07T13:41:30.068Z",
+      "source": "https://www.schwab.com/learn/story/how-to-use-volume-weighted-indicators-trading",
+      "path": "knowledge/technical_analysis/2026-02-07T13-41-30-068Z-how-to-use-volume-weighted-indicators-in-trading.md"
+    },
+    {
+      "id": "41485d55-7598-4e8c-b740-6404bffc79b2",
+      "title": "16 Candlestick Patterns Every Trader Should Know",
+      "topic": "technical_analysis",
+      "tags": [
+        "candlestick_patterns",
+        "price_action",
+        "reversal_patterns",
+        "continuation_patterns",
+        "support_resistance",
+        "chart_reading",
+        "technical_signals"
+      ],
+      "created_at": "2026-02-07T13:40:57.491Z",
+      "source": "https://www.ig.com/en/trading-strategies/16-candlestick-patterns-every-trader-should-know-180615",
+      "path": "knowledge/technical_analysis/2026-02-07T13-40-57-491Z-16-candlestick-patterns-every-trader-should-know.md"
+    },
+    {
+      "id": "50aa1c7d-528f-4d44-aeff-9d0aba4b4b6f",
+      "title": "Trading Support and Resistance with Price Action",
+      "topic": "technical_analysis",
+      "tags": [
+        "support_resistance",
+        "price_action",
+        "horizontal_levels",
+        "role_reversal",
+        "swing_points",
+        "entry_signals",
+        "risk_reward"
+      ],
+      "created_at": "2026-02-07T13:40:20.211Z",
+      "source": "https://priceaction.com/price-action-university/strategies/support-resistance-levels/",
+      "path": "knowledge/technical_analysis/2026-02-07T13-40-20-211Z-trading-support-and-resistance-with-price-action.md"
+    },
+    {
+      "id": "98c4f4b0-2b24-4157-b995-77571588b919",
+      "title": "Technical Analysis: Core Principles and Practical Application",
+      "topic": "technical_analysis",
+      "tags": [
+        "chart_patterns",
+        "price_action",
+        "market_psychology",
+        "dow_theory",
+        "trend_following",
+        "volume_analysis",
+        "support_resistance",
+        "technical_indicators"
+      ],
+      "created_at": "2026-02-07T13:39:52.147Z",
+      "source": "https://www.investopedia.com/terms/t/technicalanalysis.asp",
+      "path": "knowledge/technical_analysis/2026-02-07T13-39-52-147Z-technical-analysis-core-principles-and-practical-application.md"
+    },
+    {
+      "id": "a9fa6833-6fff-4392-be6c-a0906fff87d1",
+      "title": "Technical Analysis Strategies: A Practical Guide for Traders",
+      "topic": "technical_analysis",
+      "tags": [
+        "momentum",
+        "volatility",
+        "trend_following",
+        "volume_analysis",
+        "price_action",
+        "market_structure",
+        "risk_management",
+        "chart_patterns"
+      ],
+      "created_at": "2026-02-07T13:39:23.001Z",
+      "source": "https://trendspider.com/learning-center/technical-analysis-strategies/",
+      "path": "knowledge/technical_analysis/2026-02-07T13-39-23-001Z-technical-analysis-strategies-a-practical-guide-for-traders.md"
+    },
+    {
       "id": "0f7d36d6-27fa-4043-820e-cd8b16281a26",
       "title": "Breakout Trading with Volume Confirmation",
       "topic": "technical_analysis",

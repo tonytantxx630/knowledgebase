@@ -2,6 +2,95 @@
   "topic": "prediction_market",
   "entries": [
     {
+      "id": "223c7a48-4d89-4732-b49e-440658a39a4e",
+      "title": "Polymarket Analytics: Complete Guide to Data-Driven Trading",
+      "topic": "prediction_market",
+      "tags": [
+        "polymarket",
+        "analytics",
+        "whale_tracking",
+        "performance_metrics",
+        "position_sizing",
+        "market_selection",
+        "data_driven_trading"
+      ],
+      "created_at": "2026-02-07T13:46:14.836Z",
+      "source": "https://www.polytrackhq.app/blog/polymarket-analytics",
+      "path": "knowledge/prediction_market/2026-02-07T13-46-14-836Z-polymarket-analytics-complete-guide-to-data-driven-trading.md"
+    },
+    {
+      "id": "21c2af4a-1200-4bb2-bd73-a50a14401fe6",
+      "title": "Inside UMA Oracle: How Prediction Markets Resolution Works",
+      "topic": "prediction_market",
+      "tags": [
+        "uma_oracle",
+        "market_resolution",
+        "optimistic_oracle",
+        "oracle_design",
+        "dvm",
+        "polymarket",
+        "settlement_mechanics",
+        "game_theory"
+      ],
+      "created_at": "2026-02-07T13:44:53.801Z",
+      "source": "https://rocknblock.io/blog/how-prediction-markets-resolution-works-uma-optimistic-oracle-polymarket",
+      "path": "knowledge/prediction_market/2026-02-07T13-44-53-801Z-inside-uma-oracle-how-prediction-markets-resolution-works.md"
+    },
+    {
+      "id": "ff8e01cc-1198-4664-b90e-f2fc0f2a5420",
+      "title": "How the Polymarket Order Book Works: Complete Trading Guide",
+      "topic": "prediction_market",
+      "tags": [
+        "order_book",
+        "liquidity",
+        "slippage",
+        "limit_orders",
+        "market_orders",
+        "bid_ask_spread",
+        "market_depth",
+        "polymarket"
+      ],
+      "created_at": "2026-02-07T13:43:48.871Z",
+      "source": "https://gurupolymarket.com/en/tutorials/how-the-order-book-works/",
+      "path": "knowledge/prediction_market/2026-02-07T13-43-48-871Z-how-the-polymarket-order-book-works-complete-trading-guide.md"
+    },
+    {
+      "id": "ee3bfa19-7376-4eab-9027-358ce44a379e",
+      "title": "Position Sizing on Polymarket and Kalshi: Kelly Criterion for Crypto Predictions",
+      "topic": "prediction_market",
+      "tags": [
+        "position_sizing",
+        "kelly_criterion",
+        "bankroll_management",
+        "edge_calculation",
+        "risk_of_ruin",
+        "polymarket",
+        "kalshi",
+        "probability_estimation"
+      ],
+      "created_at": "2026-02-07T13:43:01.716Z",
+      "source": "https://www.crypticorn.com/position-sizing-on-polymarket-and-kalshi-crypto-up-down-predictions/",
+      "path": "knowledge/prediction_market/2026-02-07T13-43-01-716Z-position-sizing-on-polymarket-and-kalshi-kelly-criterion-for-crypto-predictions.md"
+    },
+    {
+      "id": "03ee259f-dd5e-4638-a081-43a0c9d371fb",
+      "title": "The Alchemy of Arbitrage: Exploiting Inefficiencies in Polymarket's Prediction Markets",
+      "topic": "prediction_market",
+      "tags": [
+        "arbitrage",
+        "polymarket",
+        "market_inefficiency",
+        "cross_platform_arbitrage",
+        "high_frequency_trading",
+        "blockchain",
+        "market_manipulation",
+        "decentralized_governance"
+      ],
+      "created_at": "2026-02-07T13:42:15.218Z",
+      "source": "https://www.ainvest.com/news/alchemy-arbitrage-exploiting-inefficiencies-polymarket-prediction-markets-2509/",
+      "path": "knowledge/prediction_market/2026-02-07T13-42-15-218Z-the-alchemy-of-arbitrage-exploiting-inefficiencies-in-polymarkets-prediction-mar.md"
+    },
+    {
       "id": "b9bbbf68-62ba-4674-9728-7c87bdaf3107",
       "title": "Top 10 Polymarket Trading Strategies",
       "topic": "prediction_market",

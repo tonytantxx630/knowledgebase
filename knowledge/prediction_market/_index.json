@@ -2,6 +2,41 @@
   "topic": "prediction_market",
   "entries": [
     {
+      "id": "aa1d1627-56b6-4fc2-91cd-619209fab09b",
+      "title": "How to Build a Polymarket Trading Bot (Python Guide)",
+      "topic": "prediction_market",
+      "tags": [
+        "polymarket",
+        "trading_bots",
+        "automation",
+        "market_making",
+        "arbitrage",
+        "risk_management",
+        "algorithmic_trading",
+        "execution"
+      ],
+      "created_at": "2026-02-07T14:22:53.033Z",
+      "source": "https://www.polytrackhq.app/blog/polymarket-trading-bot",
+      "path": "knowledge/prediction_market/2026-02-07T14-22-53-033Z-how-to-build-a-polymarket-trading-bot-python-guide.md"
+    },
+    {
+      "id": "7c496524-47e6-430c-9f8a-0efc7729b569",
+      "title": "Automated Market Making on Polymarket",
+      "topic": "prediction_market",
+      "tags": [
+        "market_making",
+        "liquidity_provision",
+        "polymarket",
+        "automated_trading",
+        "volatility_analysis",
+        "spread_capture",
+        "reward_optimization"
+      ],
+      "created_at": "2026-02-07T14:21:53.421Z",
+      "source": "https://news.polymarket.com/p/automated-market-making-on-polymarket",
+      "path": "knowledge/prediction_market/2026-02-07T14-21-53-421Z-automated-market-making-on-polymarket.md"
+    },
+    {
       "id": "223c7a48-4d89-4732-b49e-440658a39a4e",
       "title": "Polymarket Analytics: Complete Guide to Data-Driven Trading",
       "topic": "prediction_market",

@@ -2,6 +2,109 @@
   "topic": "prediction_market",
   "entries": [
     {
+      "id": "23f25e37-7f55-4a05-a89d-b4518410c332",
+      "title": "Delta-Neutral Hedging and Arbitrage Strategies on Polymarket",
+      "topic": "prediction_market",
+      "tags": [
+        "delta_neutral",
+        "arbitrage",
+        "hedging",
+        "cross_market",
+        "pre_market",
+        "polymarket",
+        "spread_trading",
+        "risk_neutralization"
+      ],
+      "created_at": "2026-02-08T04:11:51.726Z",
+      "source": "web:phemex",
+      "path": "knowledge/prediction_market/2026-02-08T04-11-51-726Z-delta-neutral-hedging-and-arbitrage-strategies-on-polymarket.md"
+    },
+    {
+      "id": "d654c7be-1b5c-46f8-a5d1-514ab89c2e1a",
+      "title": "Liquidity Provision and Market Making on Polymarket",
+      "topic": "prediction_market",
+      "tags": [
+        "liquidity_provision",
+        "market_making",
+        "polymarket",
+        "bid_ask_spread",
+        "automated_trading",
+        "liquidity_rewards",
+        "order_book"
+      ],
+      "created_at": "2026-02-08T04:11:24.277Z",
+      "source": "web:polymarket_news",
+      "path": "knowledge/prediction_market/2026-02-08T04-11-24-277Z-liquidity-provision-and-market-making-on-polymarket.md"
+    },
+    {
+      "id": "f995c130-1792-44c5-8bf6-22e5d25bbc48",
+      "title": "Polymarket Trading Tools and Intelligence Infrastructure (2026)",
+      "topic": "prediction_market",
+      "tags": [
+        "polymarket",
+        "trading_tools",
+        "market_intelligence",
+        "on_chain_analytics",
+        "whale_tracking",
+        "execution_speed",
+        "ai_analytics"
+      ],
+      "created_at": "2026-02-08T04:10:19.766Z",
+      "source": "web:captainaltcoin",
+      "path": "knowledge/prediction_market/2026-02-08T04-10-19-766Z-polymarket-trading-tools-and-intelligence-infrastructure-2026.md"
+    },
+    {
+      "id": "d84be38e-1002-4f75-b188-39c5f436b582",
+      "title": "UMA Optimistic Oracle for Polymarket Settlement",
+      "topic": "prediction_market",
+      "tags": [
+        "uma_protocol",
+        "optimistic_oracle",
+        "settlement_mechanism",
+        "dispute_resolution",
+        "polymarket_infrastructure",
+        "oracle_design",
+        "schelling_point"
+      ],
+      "created_at": "2026-02-08T04:09:15.842Z",
+      "source": "web:rocknblock",
+      "path": "knowledge/prediction_market/2026-02-08T04-09-15-842Z-uma-optimistic-oracle-for-polymarket-settlement.md"
+    },
+    {
+      "id": "43bdfe41-a2ec-4e1b-aa17-ba63f27cd7ff",
+      "title": "15-Minute Crypto Market Trading on Polymarket",
+      "topic": "prediction_market",
+      "tags": [
+        "polymarket",
+        "crypto_markets",
+        "hft",
+        "market_making",
+        "maker_rebates",
+        "short_term_trading",
+        "arbitrage"
+      ],
+      "created_at": "2026-02-08T04:08:37.319Z",
+      "source": "web:polytrackhq",
+      "path": "knowledge/prediction_market/2026-02-08T04-08-37-319Z-15-minute-crypto-market-trading-on-polymarket.md"
+    },
+    {
+      "id": "327cb818-76f5-4146-a57f-a59588beac44",
+      "title": "Using Reddit for Polymarket Trading Intelligence",
+      "topic": "prediction_market",
+      "tags": [
+        "reddit",
+        "sentiment_analysis",
+        "information_sources",
+        "contrarian_trading",
+        "polymarket",
+        "social_signals",
+        "community_analysis"
+      ],
+      "created_at": "2026-02-08T04:07:21.839Z",
+      "source": "web:polytrackhq",
+      "path": "knowledge/prediction_market/2026-02-08T04-07-21-839Z-using-reddit-for-polymarket-trading-intelligence.md"
+    },
+    {
       "id": "aa1d1627-56b6-4fc2-91cd-619209fab09b",
       "title": "How to Build a Polymarket Trading Bot (Python Guide)",
       "topic": "prediction_market",

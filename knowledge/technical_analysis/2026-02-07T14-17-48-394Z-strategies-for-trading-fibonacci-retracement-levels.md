@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["fibonacci_retracement","support_resistance","fibonacci_extensions","entry_timing","risk_management","confluence_trading","swing_trading"]
 created_at: 2026-02-07T14:17:48.394Z
 source: "https://www.investopedia.com/articles/active-trading/091114/strategies-trading-fibonacci-retracements.asp"
+source_timestamp: "NA"
 ---
 
 ## Key points

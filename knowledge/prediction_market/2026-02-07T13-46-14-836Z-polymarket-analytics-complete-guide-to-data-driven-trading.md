@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["polymarket","analytics","whale_tracking","performance_metrics","position_sizing","market_selection","data_driven_trading"]
 created_at: 2026-02-07T13:46:14.836Z
 source: "https://www.polytrackhq.app/blog/polymarket-analytics"
+source_timestamp: "NA"
 ---
 
 ## Key points

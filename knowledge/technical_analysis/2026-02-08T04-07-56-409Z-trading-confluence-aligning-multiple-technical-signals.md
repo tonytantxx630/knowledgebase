@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["confluence","technical_indicators","support_resistance","multi_timeframe_analysis","risk_management","chart_patterns","trade_setup"]
 created_at: 2026-02-08T04:07:56.409Z
 source: "web:xs_com"
+source_timestamp: "NA"
 ---
 
 ## Key points

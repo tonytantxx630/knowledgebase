@@ -147,6 +147,7 @@ Return ONLY valid JSON matching this schema:
 
 Guidelines:
 - Focus on durable principles, definitions, heuristics, and actionable takeaways.
+- **LASER FOCUS on durable TRADING STRATEGIES** (mechanics, entry/exit, logic, edge) rather than general descriptions.
 - Ignore fluff and story.
 - tags: 3-8 short snake_case tags.
 - key_points: 5-15 bullets, each self-contained.
@@ -216,6 +217,8 @@ script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text
 }
 
 function toMarkdown({ id, title, topic, tags, createdAt, source, sourceMeta, keyPoints }) {
+  const ts = sourceMeta?.publish_time ?? "NA";
+
   const fm = [
     "---",
     `id: ${id}`,
@@ -224,6 +227,7 @@ function toMarkdown({ id, title, topic, tags, createdAt, source, sourceMeta, key
     `tags: ${JSON.stringify(tags)}`,
     `created_at: ${createdAt}`,
     `source: ${source ? JSON.stringify(source) : "null"}`,
+    `source_timestamp: ${JSON.stringify(ts)}`,
     "---",
     "",
   ].join("\n");
@@ -232,7 +236,7 @@ function toMarkdown({ id, title, topic, tags, createdAt, source, sourceMeta, key
     title: sourceMeta?.title ?? null,
     author: sourceMeta?.author ?? null,
     url: sourceMeta?.url ?? null,
-    publish_time: sourceMeta?.publish_time ?? null,
+    publish_time: ts,
   };
 
   const md = [
@@ -322,6 +326,7 @@ async function main() {
     tags: extracted.tags || [],
     created_at: createdAt,
     source: args.source || null,
+    source_timestamp: args.sourcePublished || "NA",
     path: path.relative(process.cwd(), outPath),
   };
 

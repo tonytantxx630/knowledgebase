@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["candlestick_patterns","price_action","reversal_patterns","continuation_patterns","support_resistance","chart_reading","technical_signals"]
 created_at: 2026-02-07T13:40:57.491Z
 source: "https://www.ig.com/en/trading-strategies/16-candlestick-patterns-every-trader-should-know-180615"
+source_timestamp: "NA"
 ---
 
 ## Key points

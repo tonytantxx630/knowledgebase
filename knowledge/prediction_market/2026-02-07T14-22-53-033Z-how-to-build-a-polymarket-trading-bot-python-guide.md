@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["polymarket","trading_bots","automation","market_making","arbitrage","risk_management","algorithmic_trading","execution"]
 created_at: 2026-02-07T14:22:53.033Z
 source: "https://www.polytrackhq.app/blog/polymarket-trading-bot"
+source_timestamp: "NA"
 ---
 
 ## Key points

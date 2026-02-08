@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["position_sizing","kelly_criterion","bankroll_management","edge_calculation","risk_of_ruin","polymarket","kalshi","probability_estimation"]
 created_at: 2026-02-07T13:43:01.716Z
 source: "https://www.crypticorn.com/position-sizing-on-polymarket-and-kalshi-crypto-up-down-predictions/"
+source_timestamp: "NA"
 ---
 
 ## Key points

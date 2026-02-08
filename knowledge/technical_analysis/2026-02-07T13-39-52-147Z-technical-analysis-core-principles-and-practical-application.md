@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["chart_patterns","price_action","market_psychology","dow_theory","trend_following","volume_analysis","support_resistance","technical_indicators"]
 created_at: 2026-02-07T13:39:52.147Z
 source: "https://www.investopedia.com/terms/t/technicalanalysis.asp"
+source_timestamp: "NA"
 ---
 
 ## Key points

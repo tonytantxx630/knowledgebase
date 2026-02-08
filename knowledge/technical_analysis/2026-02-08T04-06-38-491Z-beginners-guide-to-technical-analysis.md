@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["technical_analysis","price_action","support_resistance","technical_indicators","market_trends","chart_analysis"]
 created_at: 2026-02-08T04:06:38.491Z
 source: "web:lat_london"
+source_timestamp: "NA"
 ---
 
 ## Key points

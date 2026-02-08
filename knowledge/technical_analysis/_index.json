@@ -2,6 +2,73 @@
   "topic": "technical_analysis",
   "entries": [
     {
+      "id": "06ecea0e-f333-4240-a304-b70d37a13e66",
+      "title": "RSI Market Regime Framework and Divergence Trading",
+      "topic": "technical_analysis",
+      "tags": [
+        "rsi",
+        "momentum_indicators",
+        "market_regimes",
+        "divergence_trading",
+        "trend_following",
+        "mean_reversion",
+        "price_action"
+      ],
+      "created_at": "2026-02-08T04:10:54.978Z",
+      "source": "web:mindmathmoney",
+      "path": "knowledge/technical_analysis/2026-02-08T04-10-54-978Z-rsi-market-regime-framework-and-divergence-trading.md"
+    },
+    {
+      "id": "b583d58b-ea9b-4d7b-bde9-435e046c249f",
+      "title": "Japanese Candlestick Patterns and Modern Indicator Confirmation",
+      "topic": "technical_analysis",
+      "tags": [
+        "candlestick_patterns",
+        "trend_reversal",
+        "technical_indicators",
+        "trade_setup",
+        "risk_management",
+        "momentum",
+        "moving_averages"
+      ],
+      "created_at": "2026-02-08T04:09:45.282Z",
+      "source": "web:alphaexcapital",
+      "path": "knowledge/technical_analysis/2026-02-08T04-09-45-282Z-japanese-candlestick-patterns-and-modern-indicator-confirmation.md"
+    },
+    {
+      "id": "e19498a0-fb2f-4b96-a821-7fc589952408",
+      "title": "Trading Confluence: Aligning Multiple Technical Signals",
+      "topic": "technical_analysis",
+      "tags": [
+        "confluence",
+        "technical_indicators",
+        "support_resistance",
+        "multi_timeframe_analysis",
+        "risk_management",
+        "chart_patterns",
+        "trade_setup"
+      ],
+      "created_at": "2026-02-08T04:07:56.409Z",
+      "source": "web:xs_com",
+      "path": "knowledge/technical_analysis/2026-02-08T04-07-56-409Z-trading-confluence-aligning-multiple-technical-signals.md"
+    },
+    {
+      "id": "68b28a97-4b0d-4c81-bc2f-3cb5ba1563b3",
+      "title": "Beginner's Guide to Technical Analysis",
+      "topic": "technical_analysis",
+      "tags": [
+        "technical_analysis",
+        "price_action",
+        "support_resistance",
+        "technical_indicators",
+        "market_trends",
+        "chart_analysis"
+      ],
+      "created_at": "2026-02-08T04:06:38.491Z",
+      "source": "web:lat_london",
+      "path": "knowledge/technical_analysis/2026-02-08T04-06-38-491Z-beginners-guide-to-technical-analysis.md"
+    },
+    {
       "id": "8268b0fb-e645-494d-87d1-30f6599ff4a1",
       "title": "How To Profit From the Bollinger Squeeze",
       "topic": "technical_analysis",

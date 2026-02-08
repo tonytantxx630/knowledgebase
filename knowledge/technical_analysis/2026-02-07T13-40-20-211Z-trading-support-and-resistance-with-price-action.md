@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["support_resistance","price_action","horizontal_levels","role_reversal","swing_points","entry_signals","risk_reward"]
 created_at: 2026-02-07T13:40:20.211Z
 source: "https://priceaction.com/price-action-university/strategies/support-resistance-levels/"
+source_timestamp: "NA"
 ---
 
 ## Key points

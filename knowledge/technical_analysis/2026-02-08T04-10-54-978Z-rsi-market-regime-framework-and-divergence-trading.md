@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["rsi","momentum_indicators","market_regimes","divergence_trading","trend_following","mean_reversion","price_action"]
 created_at: 2026-02-08T04:10:54.978Z
 source: "web:mindmathmoney"
+source_timestamp: "NA"
 ---
 
 ## Key points

@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["breakout","resistance","volume_confirmation","stop_loss","swing_low","entry_signal"]
 created_at: 2026-02-01T15:32:33.361Z
 source: "demo"
+source_timestamp: "NA"
 ---
 
 ## Key points

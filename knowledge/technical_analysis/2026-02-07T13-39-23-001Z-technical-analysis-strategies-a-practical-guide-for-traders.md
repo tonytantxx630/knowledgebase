@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["momentum","volatility","trend_following","volume_analysis","price_action","market_structure","risk_management","chart_patterns"]
 created_at: 2026-02-07T13:39:23.001Z
 source: "https://trendspider.com/learning-center/technical-analysis-strategies/"
+source_timestamp: "NA"
 ---
 
 ## Key points

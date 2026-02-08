@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["order_book","liquidity","slippage","limit_orders","market_orders","bid_ask_spread","market_depth","polymarket"]
 created_at: 2026-02-07T13:43:48.871Z
 source: "https://gurupolymarket.com/en/tutorials/how-the-order-book-works/"
+source_timestamp: "NA"
 ---
 
 ## Key points

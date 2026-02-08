@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["bollinger_bands","volatility","breakout_trading","squeeze_pattern","rsi","volume_analysis","head_fake","risk_management"]
 created_at: 2026-02-07T14:21:01.850Z
 source: "https://www.investopedia.com/articles/technical/04/030304.asp"
+source_timestamp: "NA"
 ---
 
 ## Key points

@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["liquidity_provision","market_making","polymarket","bid_ask_spread","automated_trading","liquidity_rewards","order_book"]
 created_at: 2026-02-08T04:11:24.277Z
 source: "web:polymarket_news"
+source_timestamp: "NA"
 ---
 
 ## Key points

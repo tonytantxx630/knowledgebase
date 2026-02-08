@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["polymarket","crypto_markets","hft","market_making","maker_rebates","short_term_trading","arbitrage"]
 created_at: 2026-02-08T04:08:37.319Z
 source: "web:polytrackhq"
+source_timestamp: "NA"
 ---
 
 ## Key points

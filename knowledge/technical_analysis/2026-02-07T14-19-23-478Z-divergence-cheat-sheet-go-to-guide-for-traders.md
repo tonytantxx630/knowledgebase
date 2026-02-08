@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["divergence","rsi","macd","momentum_indicators","reversal_patterns","trend_continuation","oscillators","confirmation"]
 created_at: 2026-02-07T14:19:23.478Z
 source: "https://www.xs.com/en/blog/divergence-cheat-sheet/"
+source_timestamp: "NA"
 ---
 
 ## Key points

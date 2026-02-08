@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["vwap","volume_analysis","intraday_trading","support_resistance","institutional_trading","momentum","execution_quality"]
 created_at: 2026-02-07T13:41:30.068Z
 source: "https://www.schwab.com/learn/story/how-to-use-volume-weighted-indicators-trading"
+source_timestamp: "NA"
 ---
 
 ## Key points

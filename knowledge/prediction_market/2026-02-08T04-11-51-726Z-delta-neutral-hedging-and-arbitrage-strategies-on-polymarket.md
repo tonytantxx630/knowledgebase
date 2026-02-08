@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["delta_neutral","arbitrage","hedging","cross_market","pre_market","polymarket","spread_trading","risk_neutralization"]
 created_at: 2026-02-08T04:11:51.726Z
 source: "web:phemex"
+source_timestamp: "NA"
 ---
 
 ## Key points

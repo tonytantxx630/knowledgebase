@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["elliott_wave","wave_theory","fractal_analysis","trend_prediction","fibonacci_ratios","corrective_waves","impulsive_waves","market_psychology"]
 created_at: 2026-02-07T14:18:35.074Z
 source: "https://tradeciety.com/the-ultimate-trading-guide-on-elliot-wave-theory"
+source_timestamp: "NA"
 ---
 
 ## Key points

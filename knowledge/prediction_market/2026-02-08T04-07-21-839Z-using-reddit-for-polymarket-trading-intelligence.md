@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["reddit","sentiment_analysis","information_sources","contrarian_trading","polymarket","social_signals","community_analysis"]
 created_at: 2026-02-08T04:07:21.839Z
 source: "web:polytrackhq"
+source_timestamp: "NA"
 ---
 
 ## Key points

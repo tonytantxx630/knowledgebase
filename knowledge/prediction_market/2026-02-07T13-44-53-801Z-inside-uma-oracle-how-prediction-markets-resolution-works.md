@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["uma_oracle","market_resolution","optimistic_oracle","oracle_design","dvm","polymarket","settlement_mechanics","game_theory"]
 created_at: 2026-02-07T13:44:53.801Z
 source: "https://rocknblock.io/blog/how-prediction-markets-resolution-works-uma-optimistic-oracle-polymarket"
+source_timestamp: "NA"
 ---
 
 ## Key points

@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["uma_protocol","optimistic_oracle","settlement_mechanism","dispute_resolution","polymarket_infrastructure","oracle_design","schelling_point"]
 created_at: 2026-02-08T04:09:15.842Z
 source: "web:rocknblock"
+source_timestamp: "NA"
 ---
 
 ## Key points

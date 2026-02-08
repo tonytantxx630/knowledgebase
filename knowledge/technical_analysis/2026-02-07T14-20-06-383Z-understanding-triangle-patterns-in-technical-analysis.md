@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["triangle_patterns","continuation_patterns","ascending_triangle","descending_triangle","symmetrical_triangle","volume_confirmation","breakout_trading","chart_patterns"]
 created_at: 2026-02-07T14:20:06.383Z
 source: "https://www.investopedia.com/articles/technical/03/091003.asp"
+source_timestamp: "NA"
 ---
 
 ## Key points

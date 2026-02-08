@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["polymarket","arbitrage","prediction_markets","risk_free_strategies","catalyst_trading","correlation_hedging","whale_tracking","market_mechanics"]
 created_at: 2026-02-01T18:15:58.540Z
 source: "web:polymarket-trading-sources"
+source_timestamp: "NA"
 ---
 
 ## Key points

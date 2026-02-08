@@ -5,6 +5,7 @@ topic: technical_analysis
 tags: ["candlestick_patterns","trend_reversal","technical_indicators","trade_setup","risk_management","momentum","moving_averages"]
 created_at: 2026-02-08T04:09:45.282Z
 source: "web:alphaexcapital"
+source_timestamp: "NA"
 ---
 
 ## Key points

@@ -5,6 +5,7 @@ topic: prediction_market
 tags: ["market_making","liquidity_provision","polymarket","automated_trading","volatility_analysis","spread_capture","reward_optimization"]
 created_at: 2026-02-07T14:21:53.421Z
 source: "https://news.polymarket.com/p/automated-market-making-on-polymarket"
+source_timestamp: "NA"
 ---
 
 ## Key points

@@ -2,6 +2,61 @@
   "topic": "technical_analysis",
   "entries": [
     {
+      "id": "a8264a72-f7f8-4060-8eb8-d6049236c289",
+      "title": "Bollinger Bands: Reversal and Breakout Trading Strategy",
+      "topic": "technical_analysis",
+      "tags": [
+        "bollinger_bands",
+        "volatility_trading",
+        "mean_reversion",
+        "squeeze_breakout",
+        "overbought_oversold",
+        "confirmation_signals",
+        "multi_timeframe"
+      ],
+      "created_at": "2026-02-14T16:21:19.936Z",
+      "source": "web",
+      "source_timestamp": "2025-06-04",
+      "path": "knowledge/technical_analysis/2026-02-14T16-21-19-936Z-bollinger-bands-reversal-and-breakout-trading-strategy.md"
+    },
+    {
+      "id": "18ccd4ba-7a3f-441c-bb6b-42d3a1e2dbac",
+      "title": "Bull Flag Pattern: Day Trading Strategy with Entry, Stop Loss, and Take Profit",
+      "topic": "technical_analysis",
+      "tags": [
+        "bull_flag",
+        "continuation_pattern",
+        "breakout_trading",
+        "volume_confirmation",
+        "risk_reward",
+        "entry_strategy",
+        "stop_loss_placement"
+      ],
+      "created_at": "2026-02-14T16:20:37.837Z",
+      "source": "web",
+      "source_timestamp": "2025-12-13",
+      "path": "knowledge/technical_analysis/2026-02-14T16-20-37-837Z-bull-flag-pattern-day-trading-strategy-with-entry-stop-loss-and-take-profit.md"
+    },
+    {
+      "id": "9322eeb5-8f56-4a46-8c91-8af6f1569e9e",
+      "title": "Bollinger Bands Squeeze & Surge Strategy: Identifying Volatility Compression and Breakouts",
+      "topic": "technical_analysis",
+      "tags": [
+        "bollinger_bands",
+        "volatility_trading",
+        "squeeze_breakout",
+        "free_bar_reversal",
+        "mean_reversion",
+        "standard_deviation",
+        "range_expansion",
+        "volatility_cycles"
+      ],
+      "created_at": "2026-02-14T16:19:52.284Z",
+      "source": "web",
+      "source_timestamp": "2025-10-30",
+      "path": "knowledge/technical_analysis/2026-02-14T16-19-52-284Z-bollinger-bands-squeeze-surge-strategy-identifying-volatility-compression-and-br.md"
+    },
+    {
       "id": "b18e0239-25ab-4c25-b241-125d168f86b3",
       "title": "Breakout Trading Strategy: Identify High-Probability Setups in Any Market",
       "topic": "technical_analysis",
@@ -76,6 +131,24 @@
       "path": "knowledge/technical_analysis/2026-02-14T16-18-17-824Z-momentum-indicator-strategies-for-entry-and-exit.md"
     },
     {
+      "id": "f0ba7cf3-92c2-4f91-abb7-55a31d38d31b",
+      "title": "Bollinger Bands Squeeze-Surge Strategy: Identifying Volatility Compression and Breakouts",
+      "topic": "technical_analysis",
+      "tags": [
+        "bollinger_bands",
+        "volatility",
+        "breakout_strategy",
+        "squeeze_pattern",
+        "atr_stops",
+        "false_breakouts",
+        "multi_timeframe"
+      ],
+      "created_at": "2026-02-14T16:17:56.096Z",
+      "source": "web",
+      "source_timestamp": "2025-07-01",
+      "path": "knowledge/technical_analysis/2026-02-14T16-17-56-096Z-bollinger-bands-squeeze-surge-strategy-identifying-volatility-compression-and-br.md"
+    },
+    {
       "id": "bd86fb2d-b2af-4b60-822c-5fda671446ca",
       "title": "Best Entry and Exit Indicators for Trading: Complete Guide 2026",
       "topic": "technical_analysis",
@@ -93,6 +166,25 @@
       "source": "web:litefinance",
       "source_timestamp": "2025-09-29",
       "path": "knowledge/technical_analysis/2026-02-14T16-17-42-603Z-best-entry-and-exit-indicators-for-trading-complete-guide-2026.md"
+    },
+    {
+      "id": "886ca042-718f-4489-953d-1dc51da43aa7",
+      "title": "RSI Indicator Trading Strategy: Reversals, Divergences, and Risk Management",
+      "topic": "technical_analysis",
+      "tags": [
+        "rsi",
+        "momentum_indicator",
+        "reversal_trading",
+        "divergence",
+        "overbought_oversold",
+        "multi_timeframe_analysis",
+        "atr_stops",
+        "risk_management"
+      ],
+      "created_at": "2026-02-14T16:16:37.117Z",
+      "source": "web",
+      "source_timestamp": "2025-02-19",
+      "path": "knowledge/technical_analysis/2026-02-14T16-16-37-117Z-rsi-indicator-trading-strategy-reversals-divergences-and-risk-management.md"
     },
     {
       "id": "7dcc20ba-f9e0-4f31-bc33-1543c8ffaec8",
@@ -149,6 +241,43 @@
       "path": "knowledge/technical_analysis/2026-02-08T14-08-42-721Z-core-technical-analysis-trading-principles-and-setup-strategies.md"
     },
     {
+      "id": "66908946-40a4-4e01-950d-0321bdbbd586",
+      "title": "Core Rules-Based Trading Strategies for 2026",
+      "topic": "technical_analysis",
+      "tags": [
+        "momentum",
+        "reversal",
+        "vwap",
+        "ema_cloud",
+        "rsi_divergence",
+        "order_flow",
+        "risk_management",
+        "pair_trading"
+      ],
+      "created_at": "2026-02-08T14:07:43.534Z",
+      "source": "web:quadcode",
+      "source_timestamp": "2025-10-27",
+      "path": "knowledge/technical_analysis/2026-02-08T14-07-43-534Z-core-rules-based-trading-strategies-for-2026.md"
+    },
+    {
+      "id": "f0c749e6-1d9b-4164-aaf4-6bdb3c0389dc",
+      "title": "Breakout Trading: Types, Confirmation, Execution & Risk Management",
+      "topic": "technical_analysis",
+      "tags": [
+        "breakout_trading",
+        "continuation_patterns",
+        "reversal_patterns",
+        "volume_confirmation",
+        "atr_stops",
+        "entry_execution",
+        "risk_management"
+      ],
+      "created_at": "2026-02-08T14:06:59.773Z",
+      "source": "web:atmosfunded",
+      "source_timestamp": "2025-11-13",
+      "path": "knowledge/technical_analysis/2026-02-08T14-06-59-773Z-breakout-trading-types-confirmation-execution-risk-management.md"
+    },
+    {
       "id": "06ecea0e-f333-4240-a304-b70d37a13e66",
       "title": "RSI Market Regime Framework and Divergence Trading",
       "topic": "technical_analysis",
@@ -163,6 +292,7 @@
       ],
       "created_at": "2026-02-08T04:10:54.978Z",
       "source": "web:mindmathmoney",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-08T04-10-54-978Z-rsi-market-regime-framework-and-divergence-trading.md"
     },
     {
@@ -180,6 +310,7 @@
       ],
       "created_at": "2026-02-08T04:09:45.282Z",
       "source": "web:alphaexcapital",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-08T04-09-45-282Z-japanese-candlestick-patterns-and-modern-indicator-confirmation.md"
     },
     {
@@ -197,6 +328,7 @@
       ],
       "created_at": "2026-02-08T04:07:56.409Z",
       "source": "web:xs_com",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-08T04-07-56-409Z-trading-confluence-aligning-multiple-technical-signals.md"
     },
     {
@@ -213,6 +345,7 @@
       ],
       "created_at": "2026-02-08T04:06:38.491Z",
       "source": "web:lat_london",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-08T04-06-38-491Z-beginners-guide-to-technical-analysis.md"
     },
     {
@@ -231,6 +364,7 @@
       ],
       "created_at": "2026-02-07T14:21:01.850Z",
       "source": "https://www.investopedia.com/articles/technical/04/030304.asp",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T14-21-01-850Z-how-to-profit-from-the-bollinger-squeeze.md"
     },
     {
@@ -249,6 +383,7 @@
       ],
       "created_at": "2026-02-07T14:20:06.383Z",
       "source": "https://www.investopedia.com/articles/technical/03/091003.asp",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T14-20-06-383Z-understanding-triangle-patterns-in-technical-analysis.md"
     },
     {
@@ -267,6 +402,7 @@
       ],
       "created_at": "2026-02-07T14:19:23.478Z",
       "source": "https://www.xs.com/en/blog/divergence-cheat-sheet/",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T14-19-23-478Z-divergence-cheat-sheet-go-to-guide-for-traders.md"
     },
     {
@@ -285,6 +421,7 @@
       ],
       "created_at": "2026-02-07T14:18:35.074Z",
       "source": "https://tradeciety.com/the-ultimate-trading-guide-on-elliot-wave-theory",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T14-18-35-074Z-the-ultimate-trading-guide-on-elliott-wave-theory.md"
     },
     {
@@ -302,6 +439,7 @@
       ],
       "created_at": "2026-02-07T14:17:48.394Z",
       "source": "https://www.investopedia.com/articles/active-trading/091114/strategies-trading-fibonacci-retracements.asp",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T14-17-48-394Z-strategies-for-trading-fibonacci-retracement-levels.md"
     },
     {
@@ -319,6 +457,7 @@
       ],
       "created_at": "2026-02-07T13:41:30.068Z",
       "source": "https://www.schwab.com/learn/story/how-to-use-volume-weighted-indicators-trading",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T13-41-30-068Z-how-to-use-volume-weighted-indicators-in-trading.md"
     },
     {
@@ -336,6 +475,7 @@
       ],
       "created_at": "2026-02-07T13:40:57.491Z",
       "source": "https://www.ig.com/en/trading-strategies/16-candlestick-patterns-every-trader-should-know-180615",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T13-40-57-491Z-16-candlestick-patterns-every-trader-should-know.md"
     },
     {
@@ -353,6 +493,7 @@
       ],
       "created_at": "2026-02-07T13:40:20.211Z",
       "source": "https://priceaction.com/price-action-university/strategies/support-resistance-levels/",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T13-40-20-211Z-trading-support-and-resistance-with-price-action.md"
     },
     {
@@ -371,6 +512,7 @@
       ],
       "created_at": "2026-02-07T13:39:52.147Z",
       "source": "https://www.investopedia.com/terms/t/technicalanalysis.asp",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T13-39-52-147Z-technical-analysis-core-principles-and-practical-application.md"
     },
     {
@@ -389,6 +531,7 @@
       ],
       "created_at": "2026-02-07T13:39:23.001Z",
       "source": "https://trendspider.com/learning-center/technical-analysis-strategies/",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-07T13-39-23-001Z-technical-analysis-strategies-a-practical-guide-for-traders.md"
     },
     {
@@ -405,6 +548,7 @@
       ],
       "created_at": "2026-02-01T15:33:47.276Z",
       "source": "demo",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-01T15-33-47-276Z-breakout-trading-with-volume-confirmation.md"
     },
     {
@@ -421,6 +565,7 @@
       ],
       "created_at": "2026-02-01T15:32:33.361Z",
       "source": "demo",
+      "source_timestamp": "NA",
       "path": "knowledge/technical_analysis/2026-02-01T15-32-33-361Z-breakout-trading-volume-confirmation-and-stop-placement.md"
     }
   ]

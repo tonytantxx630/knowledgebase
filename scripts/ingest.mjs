@@ -19,7 +19,6 @@ const TOPICS = [
   "cryptocurrency",
   "prediction_market",
   "technical_analysis",
-  "technical_trading",
   "macro",
   "risk_management",
   "equities",

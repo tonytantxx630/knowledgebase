@@ -2,6 +2,98 @@
   "topic": "prediction_market",
   "entries": [
     {
+      "id": "49713eb8-7075-4b5c-a023-333b8db327df",
+      "title": "Oracle Manipulation Risk in Prediction Markets: The Polymarket UFO Resolution Case Study",
+      "topic": "prediction_market",
+      "tags": [
+        "oracle_manipulation",
+        "uma_governance",
+        "resolution_risk",
+        "whale_influence",
+        "market_structure",
+        "late_arb",
+        "token_weighted_voting",
+        "platform_credibility"
+      ],
+      "created_at": "2026-02-14T16:22:36.895Z",
+      "source": "web:cryptoslate.com",
+      "source_timestamp": "2025-12-10",
+      "path": "knowledge/prediction_market/2026-02-14T16-22-36-895Z-oracle-manipulation-risk-in-prediction-markets-the-polymarket-ufo-resolution-cas.md"
+    },
+    {
+      "id": "60eca176-4047-4963-9f8c-e8c918053dd9",
+      "title": "Event-Driven Investing Research Methods: Primary Source Intelligence and M&A Analysis",
+      "topic": "prediction_market",
+      "tags": [
+        "event_driven_investing",
+        "merger_arbitrage",
+        "primary_source_research",
+        "human_intelligence",
+        "m_and_a",
+        "information_edge",
+        "polymarket"
+      ],
+      "created_at": "2026-02-14T16:22:05.794Z",
+      "source": "web:news.polymarket.com",
+      "source_timestamp": "2025-12-29",
+      "path": "knowledge/prediction_market/2026-02-14T16-22-05-794Z-event-driven-investing-research-methods-primary-source-intelligence-and-m-a-anal.md"
+    },
+    {
+      "id": "22aea046-34f7-476b-a319-8da83afa784f",
+      "title": "China-US Trade Leverage and Geopolitical Strategy in Prediction Markets",
+      "topic": "prediction_market",
+      "tags": [
+        "geopolitical_analysis",
+        "china_us_relations",
+        "leverage_mapping",
+        "market_calibration",
+        "information_edge",
+        "expert_interviews",
+        "low_probability_traps"
+      ],
+      "created_at": "2026-02-14T16:21:37.148Z",
+      "source": "web:news.polymarket.com",
+      "source_timestamp": "2025-10-30",
+      "path": "knowledge/prediction_market/2026-02-14T16-21-37-148Z-china-us-trade-leverage-and-geopolitical-strategy-in-prediction-markets.md"
+    },
+    {
+      "id": "ed242303-f9e1-4b24-8728-ba3284754947",
+      "title": "Identifying and Learning from Sharp Geopolitical Traders on Polymarket",
+      "topic": "prediction_market",
+      "tags": [
+        "trader_analysis",
+        "geopolitical_forecasting",
+        "polymarket",
+        "win_rate",
+        "position_sizing",
+        "trader_selection",
+        "follow_the_sharp",
+        "leaderboard_analysis"
+      ],
+      "created_at": "2026-02-14T16:21:04.501Z",
+      "source": "web:news.polymarket.com",
+      "source_timestamp": "2025-11-12",
+      "path": "knowledge/prediction_market/2026-02-14T16-21-04-501Z-identifying-and-learning-from-sharp-geopolitical-traders-on-polymarket.md"
+    },
+    {
+      "id": "083f9f0f-e0d1-4d06-b2f5-325d78d9ff93",
+      "title": "Scottilicious Interview: Qualitative Research and Risk Management in Prediction Markets",
+      "topic": "prediction_market",
+      "tags": [
+        "qualitative_research",
+        "international_elections",
+        "human_behavior",
+        "risk_management",
+        "bonding_strategy",
+        "interview_methodology",
+        "position_sizing"
+      ],
+      "created_at": "2026-02-14T16:20:40.865Z",
+      "source": "web:news.polymarket.com",
+      "source_timestamp": "2025-12-02",
+      "path": "knowledge/prediction_market/2026-02-14T16-20-40-865Z-scottilicious-interview-qualitative-research-and-risk-management-in-prediction-m.md"
+    },
+    {
       "id": "18e386d8-ef22-4ed0-aa61-ad4b2956076e",
       "title": "Polymarket UMA Optimistic Oracle Settlement Mechanics and Trading Edge",
       "topic": "prediction_market",

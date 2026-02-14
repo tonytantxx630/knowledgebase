@@ -1,16 +1,19 @@
-git checkout main
-git pull
+1. CD into /root/.openclaw/workspace/knowledgebase
+2. git checkout main && git pull origin main
 
-Repeat this 5 times:
-Find an artile that talks about technical analysis. It could be from a website, twitter page, reddit, blogs. Check the URL against the source URLs found in md files inside knowledge/technical_analysis. If it already exist, then find another article.
-Summarise key points and create a new md file in knowledge/technical_analysis
-Rest for 1 second
+PHASE 1: CONTENT DISCOVERY & INGESTION
+- STRICT REQUIREMENT: Send a progress update to Tony every 10 minutes.
+- Goal: Add 5 new Technical Analysis entries and 5 new Polymarket Trading entries.
+- Discovery: Find high-quality articles/threads from 2025-2026 (Web, Twitter, Reddit).
+- Duplicate Check: ALWAYS check the URL against 'knowledge/**/_index.json' before ingesting.
+- Ingestion: Use 'node scripts/ingest.mjs' with full metadata flags:
+  --source-title, --source-author, --source-url, --source-published
+- Quality Control: Key points must be LASER FOCUSED on durable TRADING STRATEGIES (logic, mechanics, entry/exit, edge).
 
-Repeat this 5 times:
-Find an artile that talks about trading in polymarket. It could be from a website, twitter page, reddit, blogs. Check the URL against the source URLs found in md files inside knowledge/prediction_market. If it already exist, then find another article.
-Summarise key points and create a new md file in  knowledge/prediction_market
-Rest for 1 second
+PHASE 2: GIT MANAGEMENT
+- Create a new branch named 'learning-YYYYMMDD-HHMM' (current UTC time).
+- Add all new files and commit: "Daily knowledgebase update: 10 new strategy nodes".
+- Push to remote using the authenticated Basic Auth header (Basic B64(x-access-token:GITHUB_PAT)).
 
-Create a new branch with name = <current timestamp> and git gush to remove repo.
-
-Finally, summarize the key changes made in Telegram channel.
+PHASE 3: SUMMARY
+- Summarize the added article titles and the new branch link in the Telegram channel.

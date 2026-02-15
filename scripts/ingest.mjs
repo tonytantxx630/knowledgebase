@@ -175,18 +175,14 @@ ${text}`;
   const bashCmd = `
 set -euo pipefail
 if command -v openclaw >/dev/null 2>&1; then
-  # Use OpenClaw's internal agent tool which supports model fallback/rotation
-  openclaw agent -m "${process.env.KB_INGEST_MODEL || 'openai-codex/gpt-5.2'}" \
+  # Use OpenClaw's embedded agent runner (CLI uses --message, not positional args).
+  # Model selection is handled by the local OpenClaw config / env.
+  openclaw agent \
+    --session-id "kb-ingest" \
     --thinking low \
     --local \
-    --deliver false \
     --json \
-    "$(cat ${JSON.stringify(promptPath)})" | grep -v "^{" | grep -v "^}" > /dev/null # warm up
-  
-  # Note: we use 'openclaw agent' with --json to get structured output
-  openclaw agent -m "${process.env.KB_INGEST_MODEL || 'openai-codex/gpt-5.2'}" \
-    --thinking low --local --deliver false --json \
-    "$(cat ${JSON.stringify(promptPath)})"
+    --message "$(cat ${JSON.stringify(promptPath)})"
 else
   # Legacy fallback to claude CLI
   script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text --permission-mode dontAsk --max-budget-usd ${budget} --no-session-persistence" /dev/null
@@ -215,16 +211,23 @@ fi
 
   const cleaned = stripCodeFences(out);
   
-  // If output is from 'openclaw agent --json', it might be wrapped in an extra JSON layer
+  // If output is from `openclaw agent --json`, it is wrapped in a JSON envelope.
+  // We want the *inner* model text (which should itself be JSON per our prompt).
   let jsonText = "";
   try {
     const rawParsed = JSON.parse(cleaned);
-    if (rawParsed.content && Array.isArray(rawParsed.content)) {
-       // OpenClaw standard message format
-       jsonText = rawParsed.content.find(c => c.type === 'text')?.text || "";
-    } else {
-       jsonText = cleaned;
+
+    // New OpenClaw CLI format: { payloads: [{ text: "..." }], meta: {...} }
+    if (rawParsed.payloads && Array.isArray(rawParsed.payloads)) {
+      jsonText = rawParsed.payloads.map((p) => p?.text).filter(Boolean).join("\n");
     }
+
+    // Legacy/alternate format: { content: [{ type: "text", text: "..." }, ...] }
+    if (!jsonText && rawParsed.content && Array.isArray(rawParsed.content)) {
+      jsonText = rawParsed.content.find((c) => c.type === "text")?.text || "";
+    }
+
+    jsonText = jsonText || cleaned;
   } catch {
     jsonText = cleaned;
   }
@@ -234,8 +237,8 @@ fi
   if (start === -1 || end === -1 || end <= start) {
     throw new Error(`Could not locate JSON object in claude output. Raw output:\n${cleaned.slice(0, 2000)}`);
   }
-  const jsonText = cleaned.slice(start, end + 1);
-  const parsed = JSON.parse(jsonText);
+  const jsonPayload = jsonText.slice(start, end + 1);
+  const parsed = JSON.parse(jsonPayload);
 
   // Basic normalization
   parsed.topic = clampTopic(forcedTopic ?? parsed.topic) ?? "other";
@@ -314,7 +317,9 @@ async function main() {
   const id = crypto.randomUUID();
   const createdAt = new Date().toISOString();
   const topic = extracted.topic || forcedTopic || "other";
-  const title = extracted.title;
+  const title = (extracted.title && extracted.title !== "Untitled")
+    ? extracted.title
+    : (args.sourceTitle || "Untitled");
   const slug = slugify(title);
 
   const baseDir = path.resolve(process.cwd(), args.outdir);

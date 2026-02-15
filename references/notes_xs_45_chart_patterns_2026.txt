@@ -1,0 +1,10 @@
+Article theme: overview of 45 chart patterns (continuation + reversal) and how to trade them.
+
+Key content (condensed):
+- Process: (1) identify trend (up/down/sideways) (2) spot pattern (flags/triangles/H&S/etc.) (3) mark support/resistance.
+- Continuation patterns: flags (bull/bear), pennants, rectangles, price channels, triangles (ascending/descending/symmetrical), wedges, cup-and-handle.
+- Reversal patterns: head & shoulders / inverse, double top/bottom, triple top/bottom, rounding top/bottom, diamond top/bottom, island reversal, shakeout.
+- Confirmation: wait for breakout/breakdown + volume expansion; avoid anticipating.
+- Risk: place stop beyond invalidation (below support for bullish setups; above resistance for bearish); avoid high-risk patterns (spikes/parabolic moves) unless position size is small.
+- Timeframes: suggests 1H–daily for many continuation patterns; 4H–weekly for larger reversal structures.
+- Execution heuristic: trade in direction of higher-timeframe trend; use retest + candle confirmation to reduce false breakouts.

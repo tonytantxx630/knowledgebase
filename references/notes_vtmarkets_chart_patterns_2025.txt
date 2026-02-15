@@ -1,0 +1,15 @@
+Article theme: comprehensive 2025 guide to trading chart patterns + candlesticks; emphasizes confirmation, volume, and risk management.
+
+Key content (condensed):
+- Continuation patterns:
+  - Flags (bull/bear): strong impulse (flagpole) + consolidation; breakout in trend direction; volume typically contracts during consolidation and expands on breakout.
+  - Triangles: ascending (bullish bias), descending (bearish bias), symmetrical (directional after breakout, often with prevailing trend).
+  - Wedges: rising wedge often bearish; falling wedge often bullish; look for momentum weakening.
+- Reversal patterns:
+  - Head and shoulders / inverse: neckline break is confirmation; target by measuring head-to-neckline distance.
+  - Double top/bottom: second failure at key level; confirm by breaking the mid-swing level.
+  - Cup-and-handle: rounded base + handle consolidation; breakout above rim.
+- Candlestick patterns: hammer/hanging man, shooting star/inverted hammer, bullish/bearish engulfing, morning/evening star, three white soldiers.
+- Confluence: higher probability when multiple signals align (pattern + key level + candle + volume).
+- Risk management: pre-define invalidation; position size so max loss ~1–2% per trade; avoid “seeing patterns everywhere”.
+- Timeframe reliability: higher TF patterns (4H/daily/weekly) more reliable than very short TF.

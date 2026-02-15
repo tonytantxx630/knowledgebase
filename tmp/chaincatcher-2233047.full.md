@@ -1,0 +1,320 @@
+Author: [Lin Wanwan's Cat](https://x.com/linwanwan823/status/2004380260121694645?s=46)
+
+On the night of the 2024 U.S. presidential election, a French trader netted $85 million on Polymarket.
+
+This figure surpasses the annual performance of most hedge funds.
+
+Polymarket, a decentralized prediction market that has processed over $9 billion in trading volume and gathered 314,000 active traders, is redefining the boundaries of "voting with money."
+
+But we must first be honest: prediction markets are a zero-sum game.
+
+Only 0.51% of wallets on Polymarket have realized profits exceeding $1,000.
+
+So, what did the winners do right?
+
+I recently wrote a series of strategies and have been trying to organize a systematic retrospective analysis of over 86 million on-chain transactions,
+
+(Data is based on academic research from IMDEA Networks Institute, covering complete on-chain records of over 86 million transactions and 17,218 market conditions from April 1, 2024, to April 1, 2025.
+
+Additionally, according to Dune Analytics data, Polymarket processed over 95 million transactions in 2025, with a nominal trading volume exceeding $21.5 billion, but there are instances of double counting.)
+
+I dissected the holding logic and entry/exit timing of top traders,
+
+Summarizing six verified profitable strategies: from the "neighbor effect" information arbitrage of a French whale to a high-probability bond strategy with an annualized return of 1800%; from cross-platform arbitrage to a domain specialization approach with a 96% win rate.
+
+Our retrospective reveals that the common traits of top traders are not "predictive ability,"
+
+But three things:
+
+Systematically capturing market pricing errors, an almost obsessive level of risk management, and the patience to build a crushing information advantage in a single domain.
+
+If you’ve read this far, I guess you will personally try it out sooner or later in 2026.
+
+Of course, this is not a guide on "how to gamble,"
+
+But rather aims to provide a systematic strategic framework and replicable methodology reference for participants in prediction markets, especially newcomers.
+
+Keywords: prediction market; Polymarket; trading strategy; arbitrage; risk management; blockchain
+
+I will divide this into five parts; if you only want to see the strategies, you can jump directly to the third part.
+
+- Research Background
+
+- Selection Dimensions and Criteria
+
+- Six Core Strategies for 2025
+
+- Position Management and Strategies
+
+- Conclusion
+
+### 1. Research Background
+
+In October 2025, ICE, the parent company of the New York Stock Exchange, wrote a $2 billion check to Polymarket, valuing it at $9 billion.
+
+A month later, Polymarket acquired a CFTC-licensed exchange and officially returned to the U.S. The "gray area project" that was expelled by regulators three years ago has now become a target of traditional finance.
+
+The turning point was the 2024 election.
+
+When all mainstream polls were saying "too close to call," Polymarket's odds steadily pointed to Trump. Bets totaling $3.7 billion ultimately predicted the outcome earlier and more accurately than professional polling agencies. The academic community began to re-examine an old question: does getting people to "put their money where their mouth is" really lead to more honest judgments?
+
+The first thirty years of the internet created three types of infrastructure: search engines tell you "what has happened," social media tells you "what others think," and algorithmic recommendations tell you "what you might want to see." But there has always been a missing piece: a place that can reliably answer "what will happen next."
+
+Polymarket is filling this gap and has become the first truly breakout application in crypto, addressing the essential need for "information pricing."
+
+When media outlets start checking odds before writing news, when investors begin to reference the market in their decision-making, and when political teams start monitoring Polymarket instead of polls.
+
+It has transitioned from gambling to a form of "pricing consensus."
+
+A market that makes Wall Street pay, allows regulators to let go, and makes polling agencies blush deserves serious study.
+
+### 2. Research Methods and Selection Criteria
+
+2.1 Data Sources
+
+This study employs multiple data sources for cross-validation:
+
+(1) Polymarket official leaderboard data;
+
+(2) Polymarket Analytics third-party analysis platform (updated every 5 minutes);
+
+(3) PolyTrack trader tracking tool;
+
+(4) Dune Analytics on-chain data dashboard;
+
+(5) Chainalysis blockchain analysis report.
+
+The data covers complete on-chain records of over 86 million transactions and 17,218 market conditions from April 2024 to December 2025.
+
+2.2 Selection Dimensions and Weights
+
+The strategy selection uses a multi-dimensional comprehensive evaluation system, specifically including:
+
+Absolute Profitability (Weight 30%):
+
+Using cumulative profit and loss (PnL) as the core metric, the total profit amount generated by the strategy is calculated. Data shows that wallets with PnL exceeding $1,000 account for only 0.51% of the total, and whale accounts with over $50,000 in trading volume account for only 1.74%.
+
+Risk-Adjusted Return (Weight 25%):
+
+Calculating investment return on investment (ROI) and Sharpe ratio among other metrics. Excellent traders typically maintain a win rate of 60-70% while controlling single trade risk exposure to 20-40% of total capital.
+
+Strategy Replicability (Weight 20%):
+
+Assessing the systematic and rule-based nature of the strategy. Profits purely relying on insider information or random luck are not included in the evaluation.
+
+Sustainability and Stability (Weight 15%):
+
+Examining the consistency of the strategy's performance across different market cycles, excluding "one-hit wonder" type gambling profits.
+
+Scalability (Weight 10%):
+
+Analyzing the applicability of the strategy under larger capital scales, considering liquidity constraints and market impact costs.
+
+2.3 Exclusion Criteria
+
+The following situations are not included in the best strategy selection:
+
+(1) Suspected market manipulation behaviors, such as the UMA token governance attack incident in March 2025, where a whale holding 5 million UMA tokens (25% of voting power) manipulated a market settlement worth $7 million;
+
+(2) Gambling-style trades with single positions exceeding 40-50%;
+
+(3) "Black box" strategies that cannot be verified or replicated;
+
+(4) Insider trading relying on non-public information.
+
+### 3. Review of Six Core Profit Strategies for 2025
+
+1. Information Arbitrage Strategy: When a Frenchman Understands Elections Better than All U.S. Polling Agencies
+
+In the early hours of November 5, 2024, while CNN and Fox News hosts were cautiously saying "the election is too close to call,"
+
+An anonymous account, Fredi9999, had already realized a profit exceeding $50 million.
+
+A few hours later, Trump announced his victory, and this account, along with its 10 associated wallets, ultimately harvested $85 million in profit.
+
+The person behind the account is Théo, a French trader who once worked on Wall Street.
+
+When all mainstream polls showed Harris and Trump neck and neck,
+
+He did something that seemed crazy: sold off almost all liquid assets to raise $80 million and bet it all on Trump winning.
+
+Théo didn't ask voters "who did you vote for," but commissioned YouGov to conduct a special poll in the swing states of Pennsylvania, Michigan, and Wisconsin, asking: "Who do you think your neighbors will vote for?"
+
+The logic of this "neighbor effect" poll is simple: some people are embarrassed to admit they support Trump, but they don't mind saying their neighbors do.
+
+The result was "shockingly leaning towards Trump." The moment he got the data, Théo increased his position from 30% to all-in.
+
+This case reveals the essence of information arbitrage: it's not about knowing more than others, but about asking the right questions. Théo spent less than $100,000 on polling, yielding an $85 million return.
+
+This may be the highest investment return rate from market research in human history. Currently, he ranks first in total earnings on Polymarket.
+
+Replicability Assessment: The barrier to information arbitrage is extremely high, requiring original research methodology, substantial capital, and the psychological resilience to stick to your judgment when "everyone says you are wrong." But its core idea, finding systematic biases in market pricing, is applicable to any controversial prediction market.
+
+#### 2. Cross-Platform Arbitrage Strategy: The Art of "Picking Up Money" Between Two Markets
+
+If information arbitrage is an "intellectual game," cross-platform arbitrage is "manual labor": tedious, mechanical, but almost risk-free.
+
+Its principle is simple enough for elementary school students to understand: for the same event, Store A sells for $45, Store B sells for $48, you buy one from each to hedge, and regardless of the outcome, you can profit from the price difference.
+
+From April 2024 to April 2025, academic research recorded a figure: Arbitrageurs extracted over $40 million in "risk-free profits" from Polymarket. The top three wallets alone made $4.2 million.
+
+A real case: On a certain day in 2025, the question "Will Bitcoin break $95,000 within an hour?" had a YES price of $0.45 on Polymarket, while on competitor Kalshi, the NO price for the same event was $0.48.
+
+Smart traders bought both sides simultaneously, with a total cost of $0.93. Regardless of whether Bitcoin rises or not, they can get back $1, yielding a 7.5% risk-free return, credited within an hour.
+
+But there is a "fatal detail": the two platforms may define "the same event" differently.
+
+During the 2024 U.S. government shutdown incident, a group of arbitrageurs found that Polymarket determined "shutdown occurred" (YES), while Kalshi determined "shutdown did not occur" (NO).
+
+They thought they had a guaranteed hedged position, but both sides ended up losing money.
+
+The reason? Polymarket's settlement standard is "OPM issues a shutdown announcement," while Kalshi requires "actual shutdown for more than 24 hours."
+
+Arbitrage is not just picking up money with your eyes closed. Behind every penny of price difference are the details of settlement rules.
+
+Replicability Assessment: This is the strategy with the lowest barrier among the six. All you need is to open accounts on multiple platforms, a bit of starting capital, and the patience to compare price differences. There are even open-source arbitrage bot codes available on GitHub. However, as institutional capital floods in, the arbitrage window is narrowing at a visible rate.
+
+#### 3. High Probability Bond Strategy: Turning "Almost Certain" into an Annualized 1800% Business
+
+Most people come to Polymarket seeking excitement: betting on dark horses, predicting upsets.
+
+But the real "smart money" does the exact opposite: they specifically buy those events that are "already set in stone."
+
+Data shows that over 90% of large orders exceeding $10,000 on Polymarket occur at price levels above $0.95. What are these "whales" doing? They are "bonding," buying events that are almost certain to happen like buying bonds.
+
+For example: three days before the December 2025 Federal Reserve interest rate meeting, the YES contract for "a 25 basis point rate cut" was trading at $0.95. Economic data was already clear, and the speeches of Federal Reserve officials hinted strongly, leaving no room for unexpected outcomes. You spend $0.95 to buy in, and three days later, you settle to get back $1, yielding a 5.2% return, with funds in hand within 72 hours.
+
+5% may not sound like much? Let's do the math: if you can find two such opportunities each week, that's 52 weeks × 2 times × 5% = 520% simple return per year. Considering compounding, the annualized return easily exceeds 1800%. And the risk you bear is close to zero.
+
+Some traders rely on this strategy, making only a few trades per week, with annual incomes exceeding $150,000.
+
+Of course, "almost certain" does not mean "absolutely certain."
+
+The biggest enemy of the bond strategy is the black swan, those 0.01% probability surprises. A single mistake can wipe out profits from dozens of successful trades. Therefore, the core ability of top bond players is not to find opportunities, but to identify "pseudo-certainty": those that seem set in stone but actually hide risks.
+
+Replicability Assessment: This is the most suitable strategy for beginners. It does not require in-depth research, speed advantages, just patience and discipline. However, its upper limit on returns is also the lowest. Once your capital reaches a certain scale, there simply aren't enough 95%+ opportunities in the market for you to "harvest."
+
+#### 4. Liquidity Provision Strategy: Just Earning "Toll"? It's Not That Simple
+
+Why do casinos always make money? Because they don't bet against you; they just take a cut.
+
+On Polymarket, there is a group of people who choose to "be the casino" rather than "be the gamblers"------they are liquidity providers (LPs).
+
+The work of an LP: simultaneously placing buy and sell orders on the order book, earning the spread in between. For example, if you place a buy order at $0.49 and a sell order at $0.51, regardless of who trades, you earn the $0.02 in between. You don't care about the event's outcome; you only care about whether someone trades.
+
+Polymarket launches new markets every day. The characteristic of new markets is: poor liquidity, large spreads, and many retail investors. For LPs, this is simply paradise. Data shows that providing liquidity in new markets can yield annualized equivalent returns of 80%-200%.
+
+A trader named
+
+[@defiance_cr](https://x.com/@defiance_cr)
+
+was interviewed by Polymarket officials, sharing in detail how he built an automated market-making system. At its peak, this system generated $700-800 in profit daily.
+He started with $10,000 in capital, initially earning about $200 per day. As the system was optimized and capital expanded, profits increased to $700-800 per day. The core is leveraging Polymarket's liquidity reward program, where placing orders on both sides of the market can yield nearly three times the rewards.
+
+His system includes two core modules: a data collection module that pulls historical prices from the Polymarket API, calculates volatility indicators, estimates expected returns for every $100 invested, and then ranks them by risk-adjusted returns; a trading execution module that automatically places orders based on preset parameters------using narrow spreads in liquid markets and wide spreads in volatile markets.
+
+However, after the election, Polymarket's liquidity rewards significantly decreased.
+
+The LP strategy remains viable at the end of 2025, but returns are declining and competition is intensifying. The configuration costs for high-frequency trading exceed the salaries of ordinary employees. High-end VPS infrastructure needs to be hosted near Polymarket servers. Optimized quantitative algorithms can achieve rapid execution.
+
+So don't envy "those traders earning $200,000 a month; they do exist. They are the top 0.5%."
+
+This combination of "market-making + prediction" is standard for advanced players.
+
+Replicability Assessment: The LP strategy requires a deep understanding of market microstructure, including order book dynamics, spread management, and inventory risk control. It is not as "mechanical" as arbitrage, nor does it require unique insights like information arbitrage, but it lies between the two, requiring skills that can be learned.
+
+#### 5. Domain Specialization Strategy: The Prediction Market Version of the 10,000-Hour Rule
+
+There is an interesting phenomenon on the Polymarket leaderboard: the most profitable individuals are almost all "specialists." They are not generalists who know a little about everything, but experts with crushing advantages in a narrow field.
+
+Here are a few real cases:
+
+Sports market dominator HyperLiquid0xb: Total profits exceeding $1.4 million, with the largest single profit of $755,000 coming from predicting a baseball game. His familiarity with MLB data rivals that of professional analysts, allowing him to quickly adjust judgments based on pitcher rotations and weather changes during games.
+
+Mention market prodigy Axios: In markets like "Will Trump say the word 'crypto' during his speech?", he maintains a terrifying 96% win rate. His method is simple but extremely time-consuming: analyzing all past public statements of the target individual, counting the frequency and context of specific words, and building predictive models. While others are still "betting," he is already "calculating."
+
+These cases share a common point: expert traders may only participate in 10-30 trades per year, but each one has extremely high confidence and profit potential.
+
+Thus, specialization is more profitable than generalization.
+
+Of course, I also saw a sports expert, SeriouslySirius, incur a single loss of $440,000 in a world championship, followed by a series of losses in subsequent events.
+
+If you only "know a little," you are just giving money to the experts. Of course, the so-called "understanding" is another form of betting.
+
+Replicability Assessment: This is the strategy that requires the most time investment but also has the highest barriers. Once you establish an information advantage in a certain field, that advantage is difficult to replicate. It is recommended to choose a field related to your existing knowledge or profession.
+
+6. Speed Trading Strategy: Getting Ahead of the World’s Reaction
+
+On a Wednesday afternoon in 2024 at 2 PM, Federal Reserve Chairman Powell began to speak. Within 8 seconds after he said, "We will adjust policy at the appropriate time," the contract price for "Federal Reserve rate cut in December" on Polymarket jumped from $0.65 to $0.78.
+
+What happened in those 8 seconds? A small group of "speed traders" monitored the live broadcast and set trigger conditions, completing their orders before ordinary people even understood what Powell said.
+
+Trading guru GCR once said that the core of speed trading is "reaction." It exploits the time window between information generation and market digestion, usually only a few seconds to a few minutes.
+
+This strategy is particularly effective in "Mention markets." For example, "Will Biden mention China in today's speech?" If you can find out the answer 30 seconds faster than others (by monitoring the White House live stream instead of waiting for news alerts), you can establish a position before the price moves.
+
+Some quantitative teams have industrialized this strategy. According to on-chain data analysis, from 2024 to 2025, top algorithmic traders executed over 10,200 speed trades, generating a total profit of $4.2 million. The tools they used include: low-latency API access, real-time news monitoring systems, preset decision rule scripts, and funds distributed across multiple platforms.
+
+But speed trading is becoming increasingly difficult. As more institutional capital enters, the arbitrage window has compressed from "minute-level" to "second-level," making it nearly impossible for ordinary people to participate. This is an arms race, and retail tools are far inferior to those of institutions.
+
+Replicability Assessment: Unless you have a technical background and are willing to invest time in developing trading systems, it is not recommended to try. The alpha in speed trading is rapidly disappearing, leaving less and less room for retail traders. If you must participate, it is advisable to start practicing in low-competition niche markets (such as local elections or niche sports events).
+
+### 4. Risk Management and Strategy Combination
+
+#### 4.1 Position Management Principles
+
+Successful traders generally follow these position management principles:
+
+Holding 5-12 unrelated positions simultaneously; mixing short-term (a few days) and long-term (a few weeks/months) positions;
+
+Retaining 20-40% of funds as reserves for new opportunities;
+
+Limiting single trade risk exposure to no more than 5-10% of total capital.
+
+Over-diversification (30+ positions) dilutes returns, while over-concentration (1-2 positions) poses excessive risk.
+
+The optimal number of positions is usually between 6-10.
+
+#### 4.2 Strategy Combination Recommendations
+
+Based on risk preferences, the following strategy allocation suggestions are made.
+
+- Conservative investors: 70% bond strategy + 20% liquidity provision + 10% following trades.
+
+- Balanced investors: 40% domain specialization + 30% arbitrage + 20% bonds + 10% event-driven.
+
+- Aggressive investors: 50% information arbitrage + 30% domain specialization + 20% speed trading.
+
+Regardless of the combination, avoid betting more than 40% of funds on a single event or a highly correlated group of events.
+
+### 5. Conclusion
+
+2025 is a key year for Polymarket to transition from a fringe experiment to mainstream finance.
+
+The six profitable strategies reviewed in this article: information arbitrage, cross-platform arbitrage, high-probability bonds, liquidity provision, domain specialization, and speed trading, represent verified sources of alpha in prediction markets.
+
+In 2026, prediction markets will face more intense competition and higher barriers to specialization.
+
+It is recommended for new entrants to focus on: (1) choosing a vertical field where they can establish an information advantage; (2) starting with small-scale bond strategies to accumulate experience; (3) using tools like PolyTrack to track and learn from top traders' patterns; (4) maintaining close attention to regulatory changes and platform rule updates.
+
+The essence of prediction markets is a "truth discovery mechanism through monetary voting."
+
+In this market, the real edge does not come from luck, but from better information, more rigorous analysis, and more rational risk management. May this review provide you with a systematic map in this new world.
+
+References
+
+[1] Chainalysis. "Polymarket Whale Analysis Report." November 2024.
+
+[2] The Free Press. "How a French Whale Made $85 Million off Trump's Win." November 2024.
+
+[3] Polymarket Analytics. "Trader Leaderboard and Performance Metrics." December 2025.
+
+[4] PolyTrack. "Best Polymarket Traders to Follow 2025." November 2025.
+
+[5] Dune Analytics. "Prediction Market Volume and Open Interest Data." September 2025.
+
+[6] Wall Street Journal. "The French Trader Who Bet Big on Trump." November 2024.
+
+[7] Bloomberg. "Trump Whale's Polymarket Haul Boosted to $85 Million." November 2024.
+
+[8] CBS News 60 Minutes. "How a French 'whale' made over $80 million on Polymarket." December 2025.

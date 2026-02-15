@@ -170,11 +170,27 @@ ${text}`;
 
   const budget = process.env.CLAUDE_MAX_BUDGET_USD || "0.15";
 
+  // Use openclaw CLI as a universal fallback for LLM calls if configured.
+  // We prefer 'openclaw agent' over direct 'claude' CLI to support model rotation.
   const bashCmd = `
 set -euo pipefail
-# script allocates a pseudo-tty; output goes to stdout.
-# We avoid complex shell-escaping by piping the prompt via stdin.
-script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text --permission-mode dontAsk --max-budget-usd ${budget} --no-session-persistence" /dev/null
+if command -v openclaw >/dev/null 2>&1; then
+  # Use OpenClaw's internal agent tool which supports model fallback/rotation
+  openclaw agent -m "${process.env.KB_INGEST_MODEL || 'openai-codex/gpt-5.2'}" \
+    --thinking low \
+    --local \
+    --deliver false \
+    --json \
+    "$(cat ${JSON.stringify(promptPath)})" | grep -v "^{" | grep -v "^}" > /dev/null # warm up
+  
+  # Note: we use 'openclaw agent' with --json to get structured output
+  openclaw agent -m "${process.env.KB_INGEST_MODEL || 'openai-codex/gpt-5.2'}" \
+    --thinking low --local --deliver false --json \
+    "$(cat ${JSON.stringify(promptPath)})"
+else
+  # Legacy fallback to claude CLI
+  script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text --permission-mode dontAsk --max-budget-usd ${budget} --no-session-persistence" /dev/null
+fi
 `;
 
   const child = spawn("bash", ["-lc", bashCmd], {
@@ -198,8 +214,23 @@ script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text
   out = out.replace(/\x1b\[[0-9;]*[A-Za-z]/g, "");
 
   const cleaned = stripCodeFences(out);
-  const start = cleaned.indexOf('{');
-  const end = cleaned.lastIndexOf('}');
+  
+  // If output is from 'openclaw agent --json', it might be wrapped in an extra JSON layer
+  let jsonText = "";
+  try {
+    const rawParsed = JSON.parse(cleaned);
+    if (rawParsed.content && Array.isArray(rawParsed.content)) {
+       // OpenClaw standard message format
+       jsonText = rawParsed.content.find(c => c.type === 'text')?.text || "";
+    } else {
+       jsonText = cleaned;
+    }
+  } catch {
+    jsonText = cleaned;
+  }
+
+  const start = jsonText.indexOf('{');
+  const end = jsonText.lastIndexOf('}');
   if (start === -1 || end === -1 || end <= start) {
     throw new Error(`Could not locate JSON object in claude output. Raw output:\n${cleaned.slice(0, 2000)}`);
   }

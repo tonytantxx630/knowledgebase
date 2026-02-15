@@ -1,0 +1,10 @@
+Article theme: RSI signals most traders misread; combines overbought exits, divergences, moving averages, Fibonacci for better interpretation.
+
+Key content (condensed):
+- Overbought readings alone are not necessarily bearish; context matters.
+- More informative signals:
+  - Exits from overbought conditions (RSI rolling over from >70) + loss of key moving averages.
+  - Bearish divergence: price makes higher high while RSI makes lower high; needs confirmation (trendline/MA break, support break).
+  - RSI range shifts can indicate regime change (from bullish to neutral/bearish).
+- Confluence approach: combine RSI with price structure, moving averages, and Fibonacci levels to define pullback vs reversal.
+- Execution: treat RSI as a momentum/confirmation tool, not a standalone entry/exit system.

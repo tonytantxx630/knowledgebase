@@ -1,0 +1,12 @@
+Article theme: RSI “overbought” (>70) can indicate strength in uptrends; how to use RSI as a trend/momentum filter.
+
+Key content (condensed):
+- Common mistake: treating RSI>70 as automatic sell signal.
+- In strong uptrends, RSI can stay >70 repeatedly (“clusters”), reflecting persistent momentum.
+- Regime concept: in uptrends RSI often oscillates roughly 40–90; pullbacks toward 40–50 can act like support.
+- Practical rules:
+  - Use trend filter first (e.g., price above 200-day SMA).
+  - Treat RSI cross above 70 as momentum confirmation (not exhaustion) when trend filter is bullish.
+  - Look for breakouts/new highs alongside RSI strength.
+- Additional tactic: consolidation where RSI cools from >70 but stays above ~50 can be bullish continuation.
+- Risk: in sideways markets classic 70/30 mean-reversion interpretations work better; always respect price support/resistance.

@@ -1,0 +1,3 @@
+Polymarket and Kalshi are prediction markets...
+
+... (content truncated for ingestion context; full article fetched via web_fetch tool)

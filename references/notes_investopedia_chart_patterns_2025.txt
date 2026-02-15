@@ -1,0 +1,12 @@
+Article theme: key stock chart patterns; explains trendlines, continuation vs reversal patterns, and role of volume.
+
+Key content (condensed):
+- Trendlines:
+  - Uptrendline connects higher lows; downtrendline connects lower highs; closing prices often used on daily charts.
+  - More touchpoints (3+) increases validity.
+- Continuation patterns (pause in prevailing trend): pennants, flags, wedges, triangles.
+  - Triangle types: symmetrical (neutral breakout), ascending (bullish continuation), descending (bearish continuation).
+  - General heuristic: longer pattern formation / larger internal move -> larger breakout move.
+- Reversal patterns: head and shoulders, double tops/bottoms, triple tops/bottoms, gaps.
+- Confirmation via break of boundary/neckline; volume often decreases during formation and increases on breakout.
+- Measured-move logic: project expected move based on pattern height/structure after breakout.

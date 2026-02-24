@@ -91,12 +91,14 @@ async function readStdin() {
 }
 
 function slugify(s) {
-  return s
-    .toLowerCase()
-    .replace(/['`]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80) || "note";
+  return (
+    s
+      .toLowerCase()
+      .replace(/['`]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 80) || "note"
+  );
 }
 
 function stripCodeFences(s) {
@@ -121,6 +123,16 @@ function ensureClaudeAvailable() {
   if (r.status !== 0) {
     throw new Error(
       `Claude Code CLI is not available (claude --version exited ${r.status}). stderr: ${String(r.stderr || "").trim()}`
+    );
+  }
+}
+
+function ensureCodexAvailable() {
+  const r = spawnSync("codex", ["--version"], { encoding: "utf8", timeout: 8000 });
+  if (r.error) throw r.error;
+  if (r.status !== 0) {
+    throw new Error(
+      `Codex CLI is not available (codex --version exited ${r.status}). stderr: ${String(r.stderr || "").trim()}`
     );
   }
 }
@@ -198,8 +210,8 @@ script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text
   out = out.replace(/\x1b\[[0-9;]*[A-Za-z]/g, "");
 
   const cleaned = stripCodeFences(out);
-  const start = cleaned.indexOf('{');
-  const end = cleaned.lastIndexOf('}');
+  const start = cleaned.indexOf("{");
+  const end = cleaned.lastIndexOf("}");
   if (start === -1 || end === -1 || end <= start) {
     throw new Error(`Could not locate JSON object in claude output. Raw output:\n${cleaned.slice(0, 2000)}`);
   }
@@ -213,6 +225,214 @@ script -q -c "cat ${JSON.stringify(promptPath)} | claude -p --output-format text
   parsed.title = String(parsed.title ?? "Untitled").trim() || "Untitled";
 
   return parsed;
+}
+
+async function codexExtract({ text, forcedTopic }) {
+  ensureCodexAvailable();
+
+  const prompt = `You extract durable trading/investment knowledge from raw text.
+
+Return ONLY valid JSON matching this schema:
+{
+  "title": string,
+  "topic": one of ${JSON.stringify(TOPICS)},
+  "tags": string[],
+  "key_points": string[]
+}
+
+Guidelines:
+- Focus on durable principles, definitions, heuristics, and actionable takeaways.
+- **LASER FOCUS on durable TRADING STRATEGIES** (mechanics, entry/exit, logic, edge) rather than general descriptions.
+- Ignore fluff and story.
+- tags: 3-8 short snake_case tags.
+- key_points: 5-15 bullets, each self-contained.
+- Do NOT include a long prose section; condense into key points only.
+- If FORCED_TOPIC is provided, use it exactly.
+- Do not run any shell commands.
+
+FORCED_TOPIC: ${forcedTopic ?? ""}
+
+TEXT:
+${text}`;
+
+  const { spawn } = await import("node:child_process");
+  const { mkdtemp, writeFile, readFile } = await import("node:fs/promises");
+  const os = await import("node:os");
+
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), "kb-codex-"));
+  const schemaPath = path.join(tmpDir, "schema.json");
+  const lastMsgPath = path.join(tmpDir, "last_message.txt");
+
+  const schema = {
+    type: "object",
+    additionalProperties: false,
+    required: ["title", "topic", "tags", "key_points"],
+    properties: {
+      title: { type: "string" },
+      topic: { type: "string", enum: TOPICS },
+      tags: { type: "array", items: { type: "string" } },
+      key_points: { type: "array", items: { type: "string" } },
+    },
+  };
+  await writeFile(schemaPath, JSON.stringify(schema, null, 2), "utf8");
+
+  const child = spawn(
+    "codex",
+    [
+      "exec",
+      "-m",
+      "gpt-5.2-codex",
+      "--sandbox",
+      "read-only",
+      "--output-schema",
+      schemaPath,
+      "--output-last-message",
+      lastMsgPath,
+      "-",
+    ],
+    { stdio: ["pipe", "pipe", "pipe"] }
+  );
+
+  let out = "";
+  let err = "";
+  child.stdout.setEncoding("utf8");
+  child.stderr.setEncoding("utf8");
+  child.stdout.on("data", (d) => (out += d));
+  child.stderr.on("data", (d) => (err += d));
+  child.stdin.end(prompt, "utf8");
+
+  const code = await new Promise((resolve) => child.on("close", resolve));
+  if (code !== 0) {
+    throw new Error(`codex exited with code ${code}: ${err.trim() || out.trim()}`);
+  }
+
+  let cleaned = "";
+  try {
+    cleaned = await readFile(lastMsgPath, "utf8");
+  } catch {
+    cleaned = out;
+  }
+  cleaned = stripCodeFences(String(cleaned));
+
+  const start = cleaned.indexOf("{");
+  const end = cleaned.lastIndexOf("}");
+  if (start === -1 || end === -1 || end <= start) {
+    throw new Error(`Could not locate JSON object in codex output. Raw output:\n${cleaned.slice(0, 2000)}`);
+  }
+  const jsonText = cleaned.slice(start, end + 1);
+  const parsed = JSON.parse(jsonText);
+
+  // Basic normalization
+  parsed.topic = clampTopic(forcedTopic ?? parsed.topic) ?? "other";
+  parsed.tags = Array.isArray(parsed.tags) ? parsed.tags.map(String) : [];
+  parsed.key_points = Array.isArray(parsed.key_points) ? parsed.key_points.map(String) : [];
+  parsed.title = String(parsed.title ?? "Untitled").trim() || "Untitled";
+
+  return parsed;
+}
+
+async function minimaxExtract({ text, forcedTopic }) {
+  const apiKey = process.env.MINIMAX_API_KEY;
+  if (!apiKey) {
+    throw new Error("MINIMAX_API_KEY is required for MiniMax extraction fallback");
+  }
+
+  const prompt = `You extract durable trading/investment knowledge from raw text.
+
+Return ONLY valid JSON matching this schema:
+{
+  "title": string,
+  "topic": one of ${JSON.stringify(TOPICS)},
+  "tags": string[],
+  "key_points": string[]
+}
+
+Guidelines:
+- Focus on durable principles, definitions, heuristics, and actionable takeaways.
+- **LASER FOCUS on durable TRADING STRATEGIES** (mechanics, entry/exit, logic, edge) rather than general descriptions.
+- Ignore fluff and story.
+- tags: 3-8 short snake_case tags.
+- key_points: 5-15 bullets, each self-contained.
+- Do NOT include a long prose section; condense into key points only.
+- If FORCED_TOPIC is provided, use it exactly.
+- Do not run any shell commands.
+
+FORCED_TOPIC: ${forcedTopic ?? ""}
+
+TEXT:
+${text}`;
+
+  const endpoint = (process.env.MINIMAX_ANTHROPIC_ENDPOINT || "https://api.minimax.io/anthropic") + "/v1/messages";
+
+  const body = {
+    model: "MiniMax-M2.5",
+    max_tokens: 1024,
+    temperature: 0,
+    system: "Return only JSON. No markdown.",
+    messages: [{ role: "user", content: [{ type: "text", text: prompt }] }],
+  };
+
+  const ac = new AbortController();
+  const t = setTimeout(() => ac.abort(), Number(process.env.MINIMAX_TIMEOUT_MS || 60000));
+
+  const r = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+    },
+    body: JSON.stringify(body),
+    signal: ac.signal,
+  }).finally(() => clearTimeout(t));
+
+  const raw = await r.text();
+  if (!r.ok) {
+    throw new Error(`minimax anthropic endpoint error: ${r.status} ${r.statusText} ${raw.slice(0, 2000)}`);
+  }
+
+  const data = JSON.parse(raw);
+  const content = Array.isArray(data?.content) ? data.content : [];
+  const textOut = content
+    .filter((p) => p && p.type === "text")
+    .map((p) => p.text)
+    .join("\n");
+
+  const cleaned = stripCodeFences(String(textOut || ""));
+  const start = cleaned.indexOf("{");
+  const end = cleaned.lastIndexOf("}");
+  if (start === -1 || end === -1 || end <= start) {
+    throw new Error(`Could not locate JSON object in minimax output. Raw output:\n${cleaned.slice(0, 2000)}`);
+  }
+
+  const parsed = JSON.parse(cleaned.slice(start, end + 1));
+
+  parsed.topic = clampTopic(forcedTopic ?? parsed.topic) ?? "other";
+  parsed.tags = Array.isArray(parsed.tags) ? parsed.tags.map(String) : [];
+  parsed.key_points = Array.isArray(parsed.key_points) ? parsed.key_points.map(String) : [];
+  parsed.title = String(parsed.title ?? "Untitled").trim() || "Untitled";
+
+  return parsed;
+}
+
+async function extract({ text, forcedTopic }) {
+  const extractor = (process.env.KB_EXTRACTOR || "auto").toLowerCase();
+  if (extractor === "claude") return await claudeExtract({ text, forcedTopic });
+  if (extractor === "codex") return await codexExtract({ text, forcedTopic });
+  if (extractor === "minimax") return await minimaxExtract({ text, forcedTopic });
+
+  try {
+    return await claudeExtract({ text, forcedTopic });
+  } catch (e) {
+    const msg = String(e?.stack || e || "");
+    if (msg.toLowerCase().includes("credit balance is too low")) {
+      return await minimaxExtract({ text, forcedTopic });
+    }
+    if (msg.includes("Could not locate JSON object")) {
+      return await minimaxExtract({ text, forcedTopic });
+    }
+    throw e;
+  }
 }
 
 function toMarkdown({ id, title, topic, tags, createdAt, source, sourceMeta, keyPoints }) {
@@ -278,7 +498,7 @@ async function main() {
     process.exit(1);
   }
 
-  const extracted = await claudeExtract({ text: cleaned, forcedTopic });
+  const extracted = await extract({ text: cleaned, forcedTopic });
 
   const id = crypto.randomUUID();
   const createdAt = new Date().toISOString();

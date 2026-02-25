@@ -379,7 +379,7 @@ ${text}`;
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-api-key": apiKey,
+      "Authorization": "Bearer " + apiKey,
       "anthropic-version": "2023-06-01",
     },
     body: JSON.stringify(body),

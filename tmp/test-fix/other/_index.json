@@ -1,0 +1,23 @@
+{
+  "topic": "other",
+  "entries": [
+    {
+      "id": "8c6c7485-c47f-4b4a-9334-5bbfd207fad1",
+      "title": "Gold as a Hedge Asset",
+      "topic": "other",
+      "tags": [
+        "gold_hedge",
+        "safe_haven",
+        "inflation_hedge",
+        "currency_hedge",
+        "asset_allocation",
+        "portfolio_protection",
+        "risk_off"
+      ],
+      "created_at": "2026-02-25T15:44:28.634Z",
+      "source": "test",
+      "source_timestamp": "NA",
+      "path": "tmp/test-fix/other/2026-02-25T15-44-28-634Z-gold-as-a-hedge-asset.md"
+    }
+  ]
+}

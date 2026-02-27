@@ -2,6 +2,173 @@
   "topic": "prediction_market",
   "entries": [
     {
+      "id": "f2ff9e52-bb67-42f6-8422-b89440652ad7",
+      "title": "Prediction Market Trading Strategies: Whale Tracking and Information Arbitrage",
+      "topic": "prediction_market",
+      "tags": [
+        "prediction_markets",
+        "whale_tracking",
+        "information_arbitrage",
+        "position_sizing",
+        "market_manipulation",
+        "platform_risk",
+        "liquidity_risk"
+      ],
+      "created_at": "2026-02-27T08:41:38.892Z",
+      "source": "web:bloomberg.com",
+      "source_timestamp": "NA",
+      "path": "knowledge/prediction_market/2026-02-27T08-41-38-892Z-prediction-market-trading-strategies-whale-tracking-and-information-arbitrage.md"
+    },
+    {
+      "id": "f207efb2-0e08-4e1e-8183-53f8ffb3c992",
+      "title": "Polymarket CLI for AI Agents: Programmatic Prediction Market Access",
+      "topic": "prediction_market",
+      "tags": [
+        "ai_trading",
+        "polymarket",
+        "automated_arbitrage",
+        "event_driven_trading",
+        "cli_tools",
+        "real_time_data",
+        "market_monitoring",
+        "backtesting"
+      ],
+      "created_at": "2026-02-27T08:40:37.642Z",
+      "source": "web:ainvest.com",
+      "source_timestamp": "NA",
+      "path": "knowledge/prediction_market/2026-02-27T08-40-37-642Z-polymarket-cli-for-ai-agents-programmatic-prediction-market-access.md"
+    },
+    {
+      "id": "cbe1d853-a0df-4f47-a37e-2f7b18168d36",
+      "title": "Polymarket vs Kalshi: Comparison and Trading Implications",
+      "topic": "prediction_market",
+      "tags": [
+        "prediction_market",
+        "polymarket",
+        "kalshi",
+        "arbitrage",
+        "fee_structure",
+        "liquidity",
+        "cross_platform_trading"
+      ],
+      "created_at": "2026-02-27T08:39:51.143Z",
+      "source": "web:panewslab.com",
+      "source_timestamp": "NA",
+      "path": "knowledge/prediction_market/2026-02-27T08-39-51-143Z-polymarket-vs-kalshi-comparison-and-trading-implications.md"
+    },
+    {
+      "id": "a135df49-5da7-487c-8666-d20764b4c975",
+      "title": "Polymarket Trading Bot: Arbitrage and Momentum Strategies",
+      "topic": "prediction_market",
+      "tags": [
+        "arbitrage",
+        "momentum_trading",
+        "copy_trading",
+        "kelly_criterion",
+        "position_sizing",
+        "risk_management",
+        "prediction_markets",
+        "automated_trading"
+      ],
+      "created_at": "2026-02-27T08:39:06.812Z",
+      "source": "web:dev.to",
+      "source_timestamp": "NA",
+      "path": "knowledge/prediction_market/2026-02-27T08-39-06-812Z-polymarket-trading-bot-arbitrage-and-momentum-strategies.md"
+    },
+    {
+      "id": "6ef4f467-415f-468a-8a90-a51dfaf173ea",
+      "title": "AI Trading Exploiting Prediction Market Glitches",
+      "topic": "prediction_market",
+      "tags": [
+        "prediction_markets",
+        "arbitrage",
+        "ai_trading",
+        "order_book",
+        "latency_arbitrage",
+        "crypto_predictions",
+        "automation",
+        "market_inefficiency"
+      ],
+      "created_at": "2026-02-27T08:38:09.894Z",
+      "source": "web:coindesk.com",
+      "source_timestamp": "NA",
+      "path": "knowledge/prediction_market/2026-02-27T08-38-09-894Z-ai-trading-exploiting-prediction-market-glitches.md"
+    },
+    {
+      "id": "4ec724b1-200b-4935-b4c1-67263b4a6071",
+      "title": "Polymarket Whale Tracking and Copy Trading Strategy",
+      "topic": "prediction_market",
+      "tags": [
+        "whale_tracking",
+        "copy_trading",
+        "polymarket",
+        "order_flow",
+        "insider_trading",
+        "market_surveillance",
+        "prediction_market",
+        "signal_following"
+      ],
+      "created_at": "2026-02-27T03:05:16.601Z",
+      "source": "web:reddit.com",
+      "source_timestamp": "2025-10-21",
+      "path": "knowledge/prediction_market/2026-02-27T03-05-16-601Z-polymarket-whale-tracking-and-copy-trading-strategy.md"
+    },
+    {
+      "id": "518c01d7-8508-4a0a-9d74-dd257c00e7ea",
+      "title": "How to Trade Polymarket Profitably",
+      "topic": "prediction_market",
+      "tags": [
+        "mispriced_probabilities",
+        "entry_timing",
+        "market_selection",
+        "probability_thinking",
+        "discipline",
+        "risk_management",
+        "emotional_markets"
+      ],
+      "created_at": "2026-02-27T03:02:11.059Z",
+      "source": "web:crypticorn.com",
+      "source_timestamp": "2026-01-08",
+      "path": "knowledge/prediction_market/2026-02-27T03-02-11-059Z-how-to-trade-polymarket-profitably.md"
+    },
+    {
+      "id": "ef4eb31d-8801-4bfb-91d7-07b601c5c9b7",
+      "title": "Polymarket Signals Providers: Strategies and Tools",
+      "topic": "prediction_market",
+      "tags": [
+        "smart_money_tracking",
+        "ai_signals",
+        "expected_value",
+        "kelly_criterion",
+        "news_arbitrage",
+        "whale_tracking",
+        "position_sizing",
+        "telegram_signals"
+      ],
+      "created_at": "2026-02-27T03:00:01.753Z",
+      "source": "web:signals.coincodecap.com",
+      "source_timestamp": "2026-02",
+      "path": "knowledge/prediction_market/2026-02-27T03-00-01-753Z-polymarket-signals-providers-strategies-and-tools.md"
+    },
+    {
+      "id": "5b0155e8-d4d1-447c-ad20-d5f5e4081fee",
+      "title": "Polymarket Information Arbitrage Strategy 2026",
+      "topic": "prediction_market",
+      "tags": [
+        "prediction_market",
+        "information_arbitrage",
+        "polymarket",
+        "kelly_criterion",
+        "position_sizing",
+        "market_inefficiency",
+        "specialization"
+      ],
+      "created_at": "2026-02-27T02:58:59.976Z",
+      "source": "web:tradetheoutcome.com",
+      "source_timestamp": "2026-02",
+      "path": "knowledge/prediction_market/2026-02-27T02-58-59-976Z-polymarket-information-arbitrage-strategy-2026.md"
+    },
+    {
       "id": "5523ee2e-a7c6-41db-a3fe-96d8af10ea5d",
       "title": "Polymarket Trading Strategies: Binary Prediction Market Mechanics and Profit Logic",
       "topic": "prediction_market",
